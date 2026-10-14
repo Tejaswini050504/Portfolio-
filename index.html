@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejaswini Chintawar</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <!-- NAVBAR STARTS HERE -->
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About Me</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <header class="top" id="home">
+        <div class="top-parent">
+
+            <div class="top-info">
+                <h1>
+                    Hello, My name is <br>
+                    <span class="s1">Tejaswini Chintawar</span>
+                    <br>
+                    and I am a <span class="s1" id="typing"></span>
+                </h1>
+
+                <ul class="top-ul">
+                    <li>
+                        <a href="#" onclick="openLinkedIn(event)" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="openGitHub(event)" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="openEmail(event)" aria-label="Email">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="openInstagram(event)" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="resume.pdf" download="Tejaswini_Chintawar_Resume.pdf">
+                    <button type="button" class="top-btn">
+                        Download Resume
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ABOUT ME SECTION STARTS HERE-->
+        <section class="about" id="about">
+
+            <div class="about-parent">
+
+
+                <div class="about-info">
+
+                    <h1>About Me</h1>
+
+                    <h3>
+                        Frontend Developer
+                        <span>& Java Programmer</span>
+                    </h3>
+
+                    <p>
+                        I am an aspiring Frontend Developer with knowledge of
+                        HTML, CSS and JavaScript. I enjoy creating responsive
+                        and user-friendly websites with clean layouts and
+                        attractive designs. I also have knowledge of Core Java,
+                        object-oriented programming and collections. I am
+                        passionate about learning new technologies and
+                        improving my development skills.
+                    </p>
+
+
+                </div>
+
+                <div class="about-image">
+                    <img src="images/profile2.png" alt="Tejaswini Chintawar">
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ABOUT ME SECTION ENDS HERE -->
+
+        <!-- EDUCATION SECTION STARTS HERE -->
+        <section class="education" id="education">
+            <h1>my education</h1>
+            <div class="education-parent">
+                <div class="education-box">
+                    <ul>
+                        <li>
+                            <h3>High School</h3>
+                        </li>
+                        <li>
+                            <h3>2008-2020</h3>
+                        </li>
+                    </ul>
+                    <h4>Mount Carmel Convent High School,Chandrapur</h4>
+                    <p>Completed my schooling with 86.4% marks. Built a strong academic foundation and developed essential learning skills.</p>
+                </div>
+
+                <div class="education-box">
+                    <ul>
+                        <li>
+                            <h3>Jr College Degree</h3>
+                        </li>
+                        <li>
+                            <h3>2020-2022</h3>
+                        </li>
+                    </ul>
+                    <h4>Dr. Umathe Jr college,Nagpur</h4>
+                    <p>Completed my Higher Secondary Certificate (HSC) with 82.17% marks. Strengthened my academic knowledge and prepared for engineering studies.</p>
+                </div>
+                <div class="education-box">
+                    <ul>
+                        <li>
+                            <h3>Bachelor's Degree</h3>
+                        </li>
+                        <li>
+                            <h3>2022-2026</h3>
+                        </li>
+                    </ul>
+                    <h4>Marathwada Mitra Mandal Institute of Technology, Lohegoan Pune</h4>
+                    <p>Completed my Bachelor's degree in Computer Engineering with First Class with Distinction. Developed technical knowledge and programming skills through academic coursework and projects.</p>
+                </div>
+            </div>
+        </section>
+        <!-- EDUCATION SECTION ENDS HERE -->
+
+        <!-- PROJECT SECTION STARTS HERE  -->
+        <section class="project" id="projects">
+
+            <h1>my projects</h1>
+
+            <div class="project-parent">
+
+                <div class="left-project-arrow" id="leftProjectArrow">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+
+                <div class="project-slider">
+
+                    <div class="project-track" id="projectTrack">
+
+                        <div class="project-box">
+                            <div class="project-box-img">
+                                <img src="images/cuda.png" alt="">
+                            </div>
+                            <div class="project-box-info">
+                                <p>Created a responsive static CUDA website using HTML and CSS.
+                                    Designed a clean layout with structured sections and styling.</p>
+                                <button onclick="openProject('cuda')">visit</button>
+                            </div>
+                        </div>
+
+                        <div class="project-box">
+                            <div class="project-box-img">
+                                <img src="images/autowash.png" alt="">
+                            </div>
+                            <div class="project-box-info">
+                                <p>Created a responsive static car wash website using HTML and CSS.
+                                    Designed a clean and user-friendly autowash service layout.</p>
+                                <button onclick="openProject('autowash')">visit</button>
+                            </div>
+                        </div>
+
+                        <div class="project-box">
+                            <div class="project-box-img">
+                                <img src="images/gym.jpg" alt="">
+                            </div>
+                            <div class="project-box-info">
+                                <p>Created a responsive static gym and fitness website using HTML and CSS.
+                                    Designed an attractive layout for fitness services</p>
+                                <button onclick="openProject('gym')">visit</button>
+                            </div>
+                        </div>
+
+                        <div class="project-box">
+                            <div class="project-box-img">
+                                <img src="images/sevenmentor.jpg" alt="">
+                            </div>
+                            <div class="project-box-info">
+                                <p>Created a responsive SevenMentor website using HTML, CSS and JavaScript.
+                                    Added interactive elements to improve the user experience.</p>
+                                <button onclick="openProject('sevenmentor')">visit</button>
+                            </div>
+                        </div>
+
+                        <div class="project-box">
+                            <div class="project-box-img">
+                                <img src="images/kids.jpg" alt="">
+                            </div>
+                            <div class="project-box-info">
+                                <p>Created a responsive static kids website using HTML and CSS.
+                                    Designed a colorful and also added transitions to add smooth effects.</p>
+                                <button onclick="openProject('kids')">visit</button>
+                            </div>
+                        </div>
+
+                        <div class="project-box">
+                            <div class="project-box-img">
+                                <img src="images/the7.jpg" alt="">
+                            </div>
+                            <div class="project-box-info">
+                                <p>Created a responsive static website using HTML and CSS.
+                                    Used CSS transitions to add smooth effects and improve the design.</p>
+                                <button onclick="openProject('the7')">visit</button>
+                            </div>
+                        </div>
+
+                        <div class="project-box">
+                            <div class="project-box-img">
+                                <img src="images/ecommerce.png" alt="">
+                            </div>
+                            <div class="project-box-info">
+                                <p>Created a responsive static e-commerce website using HTML and CSS.
+                                    Designed a shopping interface with products and organized sections.</p>
+                                <button onclick="openProject('ecommerce')">visit</button>
+                            </div>
+                        </div>
+
+                        <div class="project-box">
+                            <div class="project-box-img">
+                                <img src="images/DMart.jpg" alt="">
+                            </div>
+                            <div class="project-box-info">
+                                <p>Created a responsive DMart website using HTML, CSS and JavaScript.
+                                    Added interactive features to make it more dynamic.</p>
+                                <button onclick="openProject('dmart')">visit</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="right-project-arrow" id="rightProjectArrow">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- PROJECT SECTION ENDS HERE  -->
+
+        <!-- SKILL SECTION STARTS HERE -->
+        <section class="skill" id="skills">
+
+            <h1>my skills</h1>
+
+            <div class="skill-parent">
+                <div class="skill-box">
+                    <div class="skill-box-title">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <div class="skill-title">
+                            <h3>FrontEnd Developer</h3>
+                        </div>
+                        <div class="skill-arrow" onclick="toggleSkill(this)">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="skill-box-info">
+                        <p>
+                            I created responsive and user-friendly websites using HTML,CSS and JavaScript with clean
+                            layouts and attractive designs.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                            <span>Responsive Design</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-box">
+                    <div class="skill-box-title">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-java fa-lg"></i>
+                        </div>
+
+                        <div class="skill-title">
+                            <h3>JAVA</h3>
+                        </div>
+                        <div class="skill-arrow" onclick="toggleSkill(this)">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="skill-box-info">
+                        <p>
+                            I developed Java applications using Core Java concepts, object-oriented programming and
+                            collections.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>Core Java</span>
+                            <span>OOPs Concept</span>
+                            <span>Collections</span>
+                            <span>Exception Handling</span>
+                            <span>MultiThreading</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- SKILL SECTION ENDS HERE -->
+
+        <!-- FORM SECTION STARTS HERE -->
+        <section class="form" id="contact">
+            <h1>
+                contact me
+            </h1>
+
+            <div class="form-parent">
+                <div class="form-left">
+                    <input type="text" placeholder="Name" class="abc">
+                    <input type="email" placeholder="Email" class="abc">
+                    <textarea name="message" id="" placeholder="Message" class="abc"></textarea>
+                    <button type="submit">Send Message -></button>
+
+                </div>
+                <div class="form-right">
+
+                    <div class="form-item">
+                        <div class="icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+
+                        <div class="form-info">
+                            <h4>Email</h4>
+                            <p>tschintawar2004@email.com</p>
+                        </div>
+
+                        <div class="arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div class="form-info">
+                            <h4>Phone nummber</h4>
+                            <p>+91 9420084236</p>
+                        </div>
+
+                        <div class="arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div class="form-info">
+                            <h4>Location</h4>
+                            <p>Pune</p>
+                        </div>
+
+                        <div class="arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FORM SECTION ENDS HERE -->
+
+
+
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

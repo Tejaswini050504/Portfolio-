@@ -1,0 +1,949 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scrollbar-color: rgb(113, 7, 117) rgb(169, 206, 255);
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+section {
+scroll-margin-top: 80px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ABOUT ME CSS STARTS HERE */
+
+.about {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    padding-bottom: 4%;
+}
+
+.about-parent {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-image {
+    width: 100%;
+}
+
+.about-image img {
+    width: 100%;
+    min-height: 200px;
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.about-image img:hover {
+    filter: grayscale(0%);
+}
+
+.about-info {
+    width: 100%;
+}
+
+.about-info h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.about-info h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.about-info h3 span {
+    cursor: pointer;
+    background: linear-gradient(155deg,
+            rgba(168, 23, 173, 1) 26%,
+            rgba(33, 37, 156, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.about-info p {
+    color: rgb(210, 210, 210);
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+/* ABOUT ME CSS ENDS HERE */
+
+
+/* TOP SECTION STARTS HERE */
+
+.top {
+    text-align: center;
+    background-color: black;
+    width: 100%;
+}
+
+.top-parent {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    gap: 30px;
+    align-items: center;
+    padding: 60px 0;
+    justify-content: center;
+}
+
+.top-info {
+    width: 100%;
+}
+
+.top-info h1 {
+    color: rgb(225, 225, 225);
+    font-size: 32px;
+    font-family: "Edu QLD Hand", cursive;
+}
+
+.s1 {
+    font-family: "Inter", sans-serif;
+    font-size: 38px;
+    font-weight: 550;
+    background: linear-gradient(155deg,
+            rgba(168, 23, 173, 1) 26%,
+            rgba(33, 37, 156, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.top-ul {
+    justify-content: center;
+    padding-top: 2%;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-size: 24px;
+    padding-left: 0;
+}
+
+.top-ul li {
+    padding: 10px;
+    border: 3px solid rgb(128, 171, 228);
+    border-radius: 50%;
+    transition: transform 0.1s ease;
+}
+
+.top-ul li a {
+    color: rgb(128, 171, 228);
+}
+
+.top-ul li a:hover {
+    color: rgb(141, 15, 146);
+}
+
+.top-ul li:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    border: 3px solid rgb(141, 15, 146);
+    color: rgb(141, 15, 146);
+}
+
+.top-btn {
+    margin-top: 5%;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background: linear-gradient(155deg,
+            rgba(168, 23, 173, 1) 26%,
+            rgba(33, 37, 156, 1) 100%);
+    color: rgb(225, 225, 225);
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+}
+
+.top-btn:hover {
+    cursor: pointer;
+    box-shadow: 8px 8px 15px rgba(138, 12, 143, 0.8);
+}
+
+/* TOP CSS ENDS HERE */
+
+
+/* PROJECT CSS STARTS HERE */
+
+.project {
+    background-color: black;
+    width: 100%;
+    padding: 0 0 2%;
+    overflow: hidden;
+}
+
+.project h1 {
+    padding-bottom: 2%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    font-weight: 650;
+    background: linear-gradient(155deg,
+            rgba(168, 23, 173, 1) 26%,
+            rgba(33, 37, 156, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.project-parent {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.project-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-track {
+    width: 100%;
+    display: flex;
+    gap: 4%;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.project-box {
+    width: 96%;
+    min-width: 0;
+    border-radius: 7px;
+    overflow: hidden;
+    flex: 0 0 96%;
+    transition: transform 0.1s ease;
+    background: linear-gradient(148deg,
+            rgba(40, 69, 99, 0.9) 71%,
+            rgba(99, 173, 247, 0.88) 100%);
+}
+
+.project-box:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.project-box-img {
+    width: 100%;
+    padding: 15px;
+}
+
+.project-box-img img {
+    border-radius: 8px;
+    width: 90%;
+    margin: auto;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-box-info {
+    padding: 15px;
+}
+
+.project-box-info p {
+    padding-bottom: 2%;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+
+.project-box-info button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(155deg,
+            rgba(168, 23, 173, 1) 26%,
+            rgba(33, 37, 156, 1) 100%);
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.left-project-arrow,
+.right-project-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 221, 221);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.left-project-arrow {
+    left: 0;
+    display: none;
+}
+
+.right-project-arrow {
+    right: 0;
+}
+
+.left-project-arrow i,
+.right-project-arrow i {
+    font-size: 25px;
+    color: rgb(141, 15, 146);
+}
+
+/* PROJECT CSS ENDS HERE */
+
+
+/* FORM CSS STARTS HERE */
+
+.form {
+    background-color: black;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.form h1 {
+    padding-bottom: 2%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    font-weight: 650;
+    background: linear-gradient(155deg,
+            rgba(168, 23, 173, 1) 26%,
+            rgba(33, 37, 156, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.form-parent {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-left {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-left input {
+    background: linear-gradient(148deg,
+            rgba(40, 69, 99, 0.9) 71%,
+            rgba(99, 173, 247, 0.741) 100%);
+    border: none;
+    height: 55px;
+    border-radius: 28px;
+}
+
+.form-left input::placeholder {
+    padding-top: 14px;
+    padding-left: 15px;
+    color: white;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+
+.form-left textarea {
+    background: linear-gradient(148deg,
+            rgba(40, 69, 99, 0.9) 71%,
+            rgba(99, 173, 247, 0.88) 100%);
+    border: none;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.form-left textarea::placeholder {
+    padding-top: 14px;
+    padding-left: 15px;
+    color: white;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+
+.form-left button {
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    background: linear-gradient(155deg,
+            rgba(168, 23, 173, 1) 26%,
+            rgba(33, 37, 156, 1) 100%);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+.abc{
+    font-size: 20px;
+    color: white;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+
+.form-right  {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+
+.form-item {
+    background: linear-gradient(148deg,
+            rgba(40, 69, 99, 0.9) 71%,
+            rgba(99, 173, 247, 0.88) 100%);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 3%;
+    border-radius: 30px;
+}
+
+.icon {
+    margin-top: 7px;
+    font-size: 25px;
+    background: linear-gradient(155deg,
+            rgb(243, 34, 250) 26%,
+            rgb(48, 55, 255) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.arrow {
+    margin-left: auto;
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.form-info h4 {
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.form-info p {
+    color: rgb(168, 168, 168);
+    font-family: "Inter", sans-serif;
+}
+
+/* FORM CSS ENDS HERE */
+
+
+/* SKILL CSS STARTS HERE */
+
+.skill {
+    background-color: black;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.skill h1 {
+    padding-bottom: 2%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    font-weight: 650;
+    background: linear-gradient(155deg,
+            rgba(168, 23, 173, 1) 26%,
+            rgba(33, 37, 156, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.skill-parent {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    padding-bottom: 4%;
+}
+
+.skill-box {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-box-title {
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+    border-radius: 30px;
+    background: linear-gradient(148deg,
+            rgba(61, 93, 128, 0.844) 71%,
+            rgba(99, 173, 247, 0.88) 100%);
+}
+
+.skill-icon {
+    margin-top: 7px;
+    font-size: 25px;
+    background: linear-gradient(155deg,
+            rgb(222, 5, 229) 26%,
+            rgb(7, 11, 125) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.skill-title {
+    padding-left: 2%;
+    padding-top: 2%;
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.skill-arrow {
+    margin-left: auto;
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.skill-arrow:hover {
+    cursor: pointer;
+    font-size: 25px;
+    background: linear-gradient(155deg,
+            rgb(222, 5, 229) 26%,
+            rgb(7, 11, 125) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.skill-box-info {
+    width: 100%;
+    display: none;
+    padding: 2%;
+    background: linear-gradient(148deg,
+            rgba(40, 69, 99, 0.9) 71%,
+            rgba(99, 173, 247, 0.88) 100%);
+    border-radius: 0 0 30px 30px;
+}
+
+.skill-box-info p {
+    margin-top: 0;
+    color: rgb(210, 210, 210);
+    font-family: "Inter", sans-serif;
+    padding-bottom: 2%;
+}
+
+.skill-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tags span {
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: linear-gradient(155deg,
+            rgba(168, 23, 173, 1) 26%,
+            rgba(33, 37, 156, 1) 100%);
+    color: white;
+    transition: transform 0.1s ease;
+    font-family: "Inter", sans-serif;
+}
+
+.skill-tags span:hover {
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+/* SKILL CSS ENDS HERE */
+
+
+/* NAVBAR CSS STARTS HERE */
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-icon {
+    display: block;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 200px;
+    background-color: black;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 12px;
+}
+
+.nav-links.show {
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    background: linear-gradient(155deg,
+            rgb(222, 5, 229) 26%,
+            rgb(7, 11, 125) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+/* NAVBAR CSS ENDS HERE */
+
+/* EDUCATION CSS STARTS HERE */
+.education{
+    background-color: black;
+    padding-bottom: 2%;
+}
+.education h1{
+    padding-bottom: 2%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    font-weight: 650;
+    background: linear-gradient(155deg,
+            rgba(168, 23, 173, 1) 26%,
+            rgba(33, 37, 156, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+.education-parent{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.education-box{
+    width: 100%;
+    padding: 2%;
+    border-radius: 10px;
+    background: linear-gradient(148deg,
+            rgba(61, 93, 128, 0.844) 71%,
+            rgba(99, 173, 247, 0.88) 100%);
+    transition: transform 0.1s ease;
+}
+.education-box:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.education-box ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 17px;
+    padding-bottom: 1%;
+}
+
+.education-box h4{
+    color: rgb(165, 165, 165);
+    padding-bottom: 1%;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 450;
+}
+.education-box p{
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+}
+/* EDUCATION CSS ENDS HERE */
+
+
+/* TABLET VIEW */
+
+@media (min-width: 768px) {
+
+    .education-parent{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+    .education-box{
+        width: 48%;
+    }
+
+    .top-parent {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .top-info h1 {
+        font-size: 40px;
+    }
+
+    .project-box {
+        width: 48%;
+        flex-basis: 48%;
+    }
+
+    .form-parent {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .form-left {
+        width: 50%;
+        margin: 0;
+    }
+
+    .form-right {
+        width: 45%;
+        margin: 0;
+    }
+
+    .skill-box-title {
+        border-radius: 35px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .skill-box-info {
+        width: 80%;
+        margin: auto;
+    }
+
+    .skill-title {
+        font-size: 25px;
+        padding-top: 1%;
+        padding-left: 3%;
+    }
+
+    .skill-icon {
+        font-size: 30px;
+    }
+
+    .skill-arrow {
+        font-size: 25px;
+    }
+
+    .navbar {
+        justify-content: flex-end;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        margin-left: auto;
+        padding: 0;
+        width: auto;
+        border: none;
+        gap: 40px;
+        background-color: transparent;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .about-parent {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .about-image {
+        width: 45%;
+    }
+
+    .about-info {
+        width: 55%;
+    }
+
+    .about-info h1 {
+        font-size: 45px;
+    }
+}
+
+
+/* LAPTOP VIEW */
+
+@media (min-width: 1024px) {
+
+    .top-parent {
+        flex-direction: row;
+    }
+
+    .top-info {
+        width: 55%;
+    }
+
+    .top-info h1 {
+        font-size: 45px;
+    }
+
+    .s1 {
+        font-size: 55px;
+    }
+
+    .project-parent {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project-box {
+        width: 30%;
+        flex-basis: 30%;
+    }
+
+    .form-parent {
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .form-left {
+        width: 45%;
+        margin: 0;
+    }
+
+    .form-right {
+        width: 45%;
+        margin: 0;
+    }
+
+    .form h1,
+    .project h1,
+    .skill h1 {
+        font-size: 50px;
+    }
+
+    .skill-parent {
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+    }
+
+    .skill-box-title {
+        width: 95%;
+        margin: auto;
+        border-radius: 45px;
+        padding: 2%;
+    }
+
+    .skill-title {
+        font-size: 37px;
+        padding-top: 1%;
+        padding-left: 3%;
+    }
+
+    .skill-icon {
+        font-size: 40px;
+    }
+
+    .skill-arrow {
+        padding-top: 1%;
+        font-size: 35px;
+    }
+
+    .skill-arrow:hover {
+        font-size: 35px;
+    }
+
+    .skill-box-info {
+        width: 90%;
+        margin: auto;
+    }
+
+    .nav-links {
+        gap: 45px;
+    }
+
+    .nav-link {
+        font-size: 22px;
+    }
+
+    .about-parent {
+        gap: 40px;
+    }
+
+    .about-image {
+        width: 35%;
+    }
+
+    .about-info {
+        width: 65%;
+    }
+
+    .about-info h1 {
+        font-size: 60px;
+    }
+
+    .about-info h3 {
+        font-size: 28px;
+    }
+
+    .about-info p {
+        font-size: 22px;
+    }
+    .education-box h4{
+        font-size: 18px;
+    }
+    .education-box p{
+        font-size: 17px;
+    }
+}
