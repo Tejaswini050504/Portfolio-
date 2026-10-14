@@ -1,0 +1,1347 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+
+    /* HEADER CSS STARTS HERE */
+   .logo {
+ width: 100%;
+    height: 550px;
+    background-image: url("head.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.home {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.home h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.nav {
+    display: none;
+}
+
+.menu-icon {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 5%;
+}
+
+.menu-icon i {
+    color: white;
+    font-size: 25px;
+}
+
+.hero-content {
+    width: 90%;
+    margin: 100px auto 0;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.hero-content p {
+    width: 90%;
+    margin: 0 auto 25px;
+    font-size: 12px;
+}
+
+.hero-content button {
+    padding: 8px 18px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    font-size: 11px;
+}
+    /* HEADER CSS ENDS HERE */
+
+
+/* SERVICES CSS STARTS HERE */
+.services {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding: 130px 5% 130px;
+    overflow: hidden;
+}
+
+.services::before {
+    content: "";
+    position: absolute;
+    top: -75px;
+    left: -10%;
+    width: 120%;
+    height: 120px;
+    background-color: white;
+    border-radius: 0 0 50% 50%;
+}
+
+.services::after {
+    content: "";
+    position: absolute;
+    bottom: -75px;
+    left: -10%;
+    width: 120%;
+    height: 120px;
+    background-color: white;
+    border-radius: 50% 50% 0 0;
+}
+
+.services h1 {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 400;
+    color: rgb(68, 68, 68);
+    margin-bottom: 90px;
+}
+
+.services-parent {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.service-box {
+    width: 100%;
+    text-align: center;
+}
+
+.service-icon {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 65px;
+    border: 2px solid rgb(80, 87, 96);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon i {
+    font-size: 32px;
+    color: rgb(80, 87, 96);
+}
+
+.service-icon i:hover{
+cursor: pointer;
+transform: scale(1.17);
+color: seagreen;
+}
+.service-box h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: rgb(68, 88, 112);
+    margin-bottom: 35px;
+}
+
+.service-box p {
+    width: 90%;
+    margin: 0 auto 25px;
+    font-size: 15px;
+    color: rgb(110, 110, 110);
+}
+
+.service-box button {
+    border: none;
+    background-color: rgb(32, 190, 160);
+    color: white;
+    font-size: 14px;
+    padding: 11px 25px;
+    border-radius: 25px;
+}
+
+.service-box button:hover {
+    background-color: rgb(25, 122, 160);
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+/* SERVICES CSS ENDS HERE */
+
+
+/* WORK CSS STARTS HERE */
+.work {
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(240, 250, 240);
+    position: relative;
+    padding: 80px 0 100px;
+    overflow: hidden;
+}
+
+.work::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: -5%;
+    width: 110%;
+    height: 130px;
+    background: white;
+    border-radius: 0 0 50% 50%;
+}
+
+.work::after {
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    left: -5%;
+    width: 110%;
+    height: 130px;
+    background: white;
+    border-radius: 50% 50% 0 0;
+}
+
+.work-parent {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    
+}
+
+.work-parent h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(69, 69, 69);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.work-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.work-menu a {
+    text-decoration: none;
+    font-size: 8px;
+    color: rgb(69, 72, 74);
+    font-weight: 600;
+    padding: 5px 8px;
+    border: 2px solid rgb(69, 72, 74);
+    border-radius: 15px;
+}
+
+.work-menu a:hover{
+    color: rgb(32, 178, 137);
+    border-color: rgb(32, 178, 137);
+}
+
+
+.work-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.work-item {
+    width: 48%;
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.work-item:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 4px dashed rgb(57, 157, 143);
+}
+
+.work-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.work-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(76, 184, 190, 0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 12px;
+    color: white;
+}
+
+.work-overlay span {
+    font-size: 9px;
+    margin-bottom: 3px;
+}
+
+.work-overlay h3 {
+    font-size: 13px;
+    font-weight: 600;
+}
+.view-btn {
+    margin-top: 13px;
+    padding: 7px 17px;
+    border: none;
+    border-radius: 20px;
+    background: rgb(32, 178, 137);
+    color: white;
+    font-size: 9px;
+}
+/* WORK CSS ENDS HERE */
+
+
+/* IMAGES CSS STARTS HERE */
+.images{
+    width: 100%;
+}
+.images-parent{
+    display: flex;
+    flex-direction: column;
+}
+.images-box{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.image-ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.image-ul li{
+    color: gray;
+    text-align: center;
+}
+.image-ul li:first-child{
+    color: rgb(32, 178, 137);
+}
+.image-ul li:last-child{
+   font-size: 12px;
+
+}
+/* IMAGES CSS ENDS HERE */
+
+
+/* BLOG CSS STARTS HERE */
+.blog {
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(238, 242, 243);
+    position: relative;
+    padding: 80px 0 100px;
+    overflow: hidden;
+}
+
+.blog::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: -5%;
+    width: 110%;
+    height: 130px;
+    background: white;
+    border-radius: 0 0 50% 50%;
+}
+
+.blog::after {
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    left: -5%;
+    width: 110%;
+    height: 130px;
+    background: white;
+    border-radius: 50% 50% 0 0;
+}
+
+.blog h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    color: rgb(67, 88, 108);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.blog-parent {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}
+
+.blog-box {
+    width: 100%;
+    background: white;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.blog-box img {
+    width: 100%;
+    height: 160px;
+    display: block;
+    object-fit: cover;
+}
+
+.blog-info {
+    padding: 15px 12px 12px;
+    text-align: center;
+}
+
+.blog-info h3 {
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(0, 191, 166);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.blog-date {
+    font-size: 15px;
+    color: rgb(0, 191, 166);
+    margin-bottom: 19px;
+}
+
+.blog-text {
+    font-size: 15px;
+    color: rgb(166, 165, 165);
+    margin-bottom: 12px;
+}
+
+.blog-info button,
+.view-all {
+    border: none;
+    border-radius: 20px;
+    background: rgb(0, 191, 166);
+    color: white;
+    font-size: 15px;
+    padding: 8px 18px;
+}
+
+.view-all {
+    margin: 5px auto 0;
+}
+
+/* BLOG CSS ENDS HERE */
+
+
+/* TABLE CSS STARTS HERE */
+.table {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.table h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    color: rgb(96, 96, 96);
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.table-parent {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.table-box {
+    width: 100%;
+    border: 4px solid rgb(175, 179, 179);
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.table-box:nth-child(2){
+    border:4px solid black ;
+}
+
+
+.table-box h3 {
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(0, 191, 166);
+    text-transform: uppercase;
+    margin: 20px 0 50px;
+}
+.table-box:nth-child(2) h3 {
+    background: black;
+    color: white;
+    margin: 0 0 38px;
+    padding: 20px 0;
+}
+
+.price {
+    width: 155px;
+    height: 155px;
+    border: 2px solid rgb(0, 191, 166);
+    border-radius: 50%;
+    margin: 0 auto 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price:hover{
+    cursor: pointer;
+transform: scale(1.1);
+}
+
+.table-box:nth-child(2) .price{
+    
+    background-color: black;
+    border: white;
+}
+.table-box:nth-child(2) .price:hover{
+cursor: pointer;
+transform: scale(1.1);
+}
+
+.price span {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 191, 166);
+}
+
+.table-box:nth-child(2) .price span {
+    color: white;
+}
+
+.table-content p {
+    font-size: 16px;
+    color: rgb(85, 82, 82);
+    margin-bottom: 24px;
+}
+
+.table-content b {
+    color: rgb(34, 33, 33);
+}
+
+.table-box button {
+    width: 80%;
+    padding: 14px 0;
+    border: none;
+    border-radius: 30px;
+    background: rgb(0, 191, 166);
+    color: white;
+    font-size: 16px;
+
+}
+
+.table-box button:hover{
+    cursor: pointer;
+    background-color: rgb(62, 52, 126);
+}
+
+.table-box:nth-child(2) button {
+    background: black;
+}
+
+.table-box:nth-child(2) button:hover{
+    cursor: pointer;
+    background-color: rgb(62, 52, 126);
+}
+
+/* TABLE CSS ENDS HERE */
+
+
+
+/* ICON CSS STARTS HERE */
+
+.icon{
+     width: 100%;
+    height: 450px;
+    background-image: url("Subtract.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.icon-parent {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-box {
+    text-align: center;
+    color: white;
+    width: 30%;
+}
+
+.icon-box i {
+    font-size: 50px;
+    color: rgb(0, 191, 166);
+    margin-bottom: 15px;
+}
+
+.icon-content h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.icon-content p {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+.icon-box i:hover{
+    cursor: pointer;
+    transform: scale(1.16);
+    color: rgb(67, 170, 204);
+
+}
+/* ICON CSS ENDS HERE */
+
+
+
+
+/* TEAM CSS STARTS HERE */
+.team{
+    position: relative;
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.team h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 38px;
+    color: rgb(96, 96, 96);
+    font-weight: 400;
+}
+
+.team-parent{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+}
+
+.team-box{
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 4%;
+    text-align: center;
+    background-color: rgb(227, 255, 227);
+    border-radius: 7px;
+}
+
+.team-content{
+    text-align: center;
+}
+
+.team-box:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.team-content h3{
+    font-weight: 400;
+    font-size: 25px;
+    color: rgb(96, 96, 96);
+}
+
+.team-content h5{
+    font-size: 18px;
+    color: rgb(32, 178, 137);
+}
+
+.team-box img{
+    border-radius: 7px;
+}
+
+
+.team h1:hover{
+    cursor: pointer;
+    transform: scale(1.06);
+    color: rgb(32, 178, 137);
+}
+
+
+/* TEAM CSS ENDS HERE */
+
+    /* MAP CSS STARTS HERE */
+
+
+.map {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.map::before {
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: -15%;
+    width: 130%;
+    height: 80px;
+    background-color: white;
+    border-radius: 0 0 50% 50%;
+}
+
+.map::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    left: -15%;
+    width: 130%;
+    height: 80px;
+    background-color: white;
+    border-radius: 50% 50% 0 0;
+}
+    /* MAP CSS ENDS HERE */
+
+
+/* CONTACT CSS STARTS HERE */
+.contact {
+    width: 100%;
+    padding: 50px 0;
+    background: white;
+}
+
+.contact  h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    color: rgb(96, 96, 96);
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.contact-parent {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+.contact-info {
+    width: 100%;
+}
+
+.contact-info h3 {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(70, 84, 103);
+    margin-bottom: 35px;
+}
+
+.contact-text {
+    font-size: 16px;
+    color: rgb(100, 113, 127);
+    margin-bottom: 50px;
+}
+
+.contact-details {
+    width: 100%;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.contact-detail i {
+    width: 48px;
+    font-size: 25px;
+    color: rgb(0, 191, 166);
+    text-align: center;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 2px solid rgb(130, 128, 128);
+}
+
+.contact-detail h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(70, 84, 103);
+    margin-bottom: 5px;
+}
+
+.contact-detail p {
+    font-size: 16px;
+    color: rgb(100, 113, 127);
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input {
+    width: 100%;
+    height: 60px;
+    border: 2px solid rgb(137, 137, 137);
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    padding: 15px 18px;
+    margin-bottom: 30px;
+}
+
+.contact-form input:focus {
+    border-color: rgb(0, 191, 166);
+}
+
+.contact-form button {
+    width: 230px;
+    padding: 14px 20px;
+    margin-left: auto;
+    border: none;
+    border-radius: 30px;
+    background: rgb(0, 191, 166);
+    color: white;
+    font-size: 20px;
+}
+/* CONTACT CSS ENDS HERE */
+
+/* COMMENT CSS STARTS HERE */
+.comment {
+    width: 100%;
+    padding: 40px 0 50px;
+}
+
+.comment-parent {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.comment-icon {
+    margin-bottom: 55px;
+}
+
+.comment-icon i {
+    font-size: 70px;
+    color: rgb(32, 178, 137);
+}
+
+.comment-info {
+    width: 90%;
+    margin: 0 auto 20px;
+    font-size: 20px;
+    color: rgb(84, 83, 83);
+}
+
+.comment-name {
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(80, 80, 80);
+    margin-bottom: 25px;
+}
+.comment-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+    
+}
+
+.comment-ul li {
+    font-size: 16px;
+    color: rgb(220, 220, 220);
+}
+
+.comment-ul li:last-child {
+    color: rgb(32, 178, 137);
+}
+
+
+/* COMMENT CSS ENDS HERE */
+
+
+/* FOOTER CSS STARTS HERE */
+footer {
+    position: relative;                 
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    color: rgb(186, 184, 184);
+    padding-top: 100px;                 
+    overflow: hidden; 
+}
+.footer-curve {
+    position: absolute;
+    top: -60px;
+    left: -15%;
+    width: 130%;
+    height: 120px;
+    background-color: white;
+    border-radius: 0 0 50% 50%;
+}
+.footer-parent {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+.footer-box {
+    width: 100%;
+}
+.footer-box h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.footer-box p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: rgb(183, 181, 181);
+}
+.footer-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-box ul li {
+    padding: 8px 0;
+    font-size: 14px;
+    color: rgb(184, 183, 183);
+}
+.footer-box ul li i{
+    color: rgb(32, 178, 137);
+    margin-right: 1%;
+    font-size: 7px;
+}
+.flickr-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.flickr-images img {
+    width: 30%;
+    height: 70px;
+    display: block;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 0;
+}
+.social-icons a {
+    margin-right: 2%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.social-icons a:hover {
+    color: white;
+    border-color: rgb(174, 174, 174);
+}
+.copyright {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+.copyright p {
+    font-size: 12px;
+    color: white;
+}
+/* FOOTER CSS ENDS HERE */
+
+
+/* TABLET SCREEN VIEW */
+@media (min-width:768px) {
+    .footer-parent{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+
+    }
+    .footer-box{
+        width: 45%;
+    }
+    .team-parent{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .team-box{
+        width: 45%;
+    }
+    .images-parent{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .images-box{
+        width: 45%;
+    }
+    .map {
+        height: 450px;
+
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .map::before {
+        top: -55px;
+        height: 100px;
+    }
+
+    .map::after {
+        bottom: -55px;
+        height: 100px;
+    }
+    .services {
+        padding: 130px 5% 130px;
+    }
+
+    .services-parent {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 50px 0;
+    }
+
+    .service-box {
+        width: 45%;
+    }
+
+    .services h1 {
+        margin-bottom: 80px;
+    }
+
+    .service-icon {
+        margin-bottom: 55px;
+    }
+    .work {
+        width: 100%;
+        padding: 85px 0 105px;
+    }
+
+    .work-parent {
+        width: 85%;
+    }
+
+    .work-parent h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .work-menu {
+        gap: 25px;
+    }
+
+
+    .work-gallery {
+        gap: 8px 10px;
+    }
+
+    .work-item {
+        width: 31%;
+        height: 150px;
+    }
+    .blog {
+        width: 100%;
+    }
+
+    .blog-parent {
+        width: 85%;
+    }
+
+    .blog-box {
+        width: 48%;
+    }
+
+    .blog-box img {
+        height: 145px;
+    }
+    .table {
+        width: 100%;
+    }
+
+    .table-parent {
+        width: 90%;
+    }
+
+    .table-box {
+        width: 48%;
+    }
+    .contact {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact-parent {
+        width: 85%;
+    }
+
+    .contact-info {
+        width: 48%;
+    }
+
+    .contact-form {
+        width: 45%;
+    }
+    .comment-parent {
+        width: 100%;
+    }
+
+    .comment-info {
+        width: 85%;
+    }
+    
+    .logo {
+        min-height: 600px;
+    }
+
+    .home {
+        width: 100%;
+    }
+
+    .menu-icon {
+        right: 5%;
+    }
+
+    .hero-content {
+        width: 80%;
+        margin-top: 110px;
+    }
+
+    .hero-content p {
+        width: 85%;
+    }
+}
+
+
+
+
+/* LAPTOP SCREEN VIEW */
+@media(min-width:1024px){
+
+    .footer-box {
+        width: 23%;
+    }
+
+    .team-box {
+        width: 20%;
+    }
+    .team{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+
+    .team-box img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+    }
+
+    .images-box {
+        width: 20%;
+    }
+     .map {
+        height: 550px;
+
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .map::before {
+        top: -70px;
+        height: 120px;
+    }
+
+    .map::after {
+        bottom: -70px;
+        height: 120px;
+    }
+    .services {
+        padding: 130px 5% 130px;
+    }
+
+    .services-parent {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .service-box {
+        width: 22%;
+    }
+
+    .services h1 {
+        font-size: 38px;
+        margin-bottom: 90px;
+    }
+
+    .service-icon {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 65px;
+    }
+
+    .service-box h2 {
+        font-size: 28px;
+    }
+
+    .service-box p {
+        width: 100%;
+    }
+    .work {
+        width: 100%;
+        padding: 90px 0 110px;
+    }
+
+    .work-parent {
+        width: 80%;
+        max-width: 650px;
+    }
+
+    .work-parent h2 {
+        font-size: 27px;
+        margin-bottom: 30px;
+    }
+
+    .work-menu {
+        gap: 35px;
+    }
+
+    .work-menu a {
+        font-size: 15px;
+        padding: 6px 12px;
+    }
+
+
+    .work-item {
+        width: 32%;
+        height: 153px;
+    }
+    .view-btn{
+        font-size: 16px;
+    }
+     .blog {
+        width: 100%;
+    }
+
+    .blog-parent {
+        width: 80%;
+        max-width: 685px;
+    }
+
+    .blog-box {
+        width: 48%;
+    }
+
+    .blog-box img {
+        height: 128px;
+    }
+    .table {
+        width: 100%;
+    }
+
+    .table-parent {
+        width: 85%;
+    }
+
+    .table-box {
+        width: 23%;
+    }
+    .home {
+        width: 90%;
+    }
+
+    .nav {
+        width: 85%;
+        margin: -25px auto 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+    }
+.nav a:hover{
+    cursor: pointer;
+    color:rgb(32, 178, 137) ;
+}
+
+    .menu-icon {
+        display: none;
+    }
+
+    .hero-content {
+        width: 70%;
+        margin-top: 90px;
+    }
+}
