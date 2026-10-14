@@ -1,0 +1,3255 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* HOME PAGE CSS STRATS HERE */
+.home-page {
+    background-image: url(image/home\ page\ bg1.png);
+    width: 100%;
+    height: 280px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.home-page-parent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 90px;
+    width: 55%;
+    margin-left: 2%;
+    text-align: center;
+}
+
+.home-page-parent h1 {
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    padding-bottom: 3%;
+    font-size: 20px;
+}
+
+.home-page-parent p {
+    color: rgb(228, 226, 226);
+    font-family: "Nunito", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.home-page-parent span {
+    background: linear-gradient(59deg, rgb(139, 42, 155) 0%, rgb(255, 122, 0) 35%, rgb(244, 13, 13) 65%, rgb(75, 15, 50) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+/* HOME PAGE CSS ENDS HERE */
+
+/* TOP CSS STARTS HERE */
+.top {
+    display: none;
+    font-family: "Nunito", sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: black;
+}
+
+.mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    color: white;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.top-logo {
+    position: absolute;
+    top: 50%;
+    font-size: 22px;
+    font-family: "Nunito", sans-serif;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    display: flex;
+}
+
+.top-logo img {
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+.top-logo h4 {
+    position: relative;
+    top: 32px;
+    color: rgb(255, 102, 0);
+}
+
+.top-logo span {
+    background: linear-gradient(59deg, rgb(139, 42, 155) 0%, rgb(255, 122, 0) 35%, rgb(244, 13, 13) 65%, rgb(75, 15, 50) 100%);
+    background-clip: text;
+    font-family: "Noto Sans", sans-serif;
+    color: transparent;
+}
+
+.nav-menu {
+    display: none;
+    font-family: "Nunito", sans-serif;
+}
+
+.callback {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgb(255, 102, 0), rgb(255, 157, 66));
+    color: white;
+    font-size: 0;
+    flex-shrink: 0;
+}
+
+.callback::before {
+    content: "<";
+    font-size: 40px;
+    line-height: 1;
+}
+
+/* TOP CSS ENDS HERE */
+
+/* WHY CSS STARTS HERE */
+.why {
+    padding-top: 3%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.why h3 {
+    color: rgb(225, 94, 0);
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: "Nunito", sans-serif;
+}
+
+.why h1 {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.why h1 span {
+    color: rgb(225, 94, 0);
+}
+
+.why hr {
+    width: 60px;
+    border: none;
+    border-radius: 3px;
+    border: 3px solid rgb(225, 94, 0);
+    margin: 25px auto 45px;
+}
+
+.why-parent {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.why-box {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 100px;
+    width: 190px;
+    flex-direction: column;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+
+.why-box i {
+    color: rgb(205, 86, 1);
+    font-size: 20px;
+    width: 45px;
+    height: 40px;
+    padding-top: 5.7%;
+    border-radius: 13px;
+    border: 1px solid rgb(225, 94, 0);
+    background-color: rgba(197, 117, 63, 0.268);
+}
+
+/* WHY CSS ENDS HERE */
+
+/* CIRCLE CSS STARTS HERE */
+.circle {
+    background: linear-gradient(180deg, rgba(5, 3, 3, 1) 0%, rgba(18, 5, 0, 1) 45%, rgba(89, 22, 0, 1) 92%);
+    padding-bottom: 3%;
+}
+
+.circle-parent {
+    display: flex;
+    flex-direction: column;
+}
+
+.circle-info {
+    width: 87%;
+    margin: auto;
+}
+
+.circle-info h1 {
+    font-family: "Noto Sans", sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.circle-info h3 {
+    color: white;
+    font-size: 23px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.circle-info p {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+}
+
+.circle-info h4 {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    color: rgb(225, 94, 0);
+    font-size: 20px;
+}
+
+.circle-info button {
+    font-family: "Nunito", sans-serif;
+    color: white;
+    background-color: rgb(225, 94, 0);
+    border: none;
+    font-weight: 700;
+    border-radius: 25px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 17px;
+}
+
+.circle-info button:hover {
+    cursor: pointer;
+    background-color: rgb(205, 76, 7);
+}
+
+.circle-info span {
+    color: rgb(225, 94, 0);
+}
+
+.circle-img {
+    width: 100%;
+    position: relative;
+    left: -13px;
+}
+
+.circle-img img {
+    width: 100%;
+    height: 300px;
+}
+
+/* CIRCLE CSS ENDS HERE */
+
+/* SEAT CSS STARTS HERE */
+
+.seat {
+    background-color: black;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+.seat-parent {
+    text-align: center;
+    border: 1px solid rgba(255, 68, 0, 0.34);
+    width: 89%;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(3, 2, 2, 1) 25%, rgba(242, 87, 31, 0.101) 46%, rgba(18, 5, 0, 1) 73%);
+}
+
+.seat-parent h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.seat-parent h1 span {
+    color: rgb(225, 94, 0);
+    position: relative;
+}
+
+.seat-parent h1 span::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: rgb(225, 94, 0);
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgb(225, 94, 0);
+    left: 47%;
+    transform: translateX(-50%);
+    bottom: -5px;
+}
+
+.seat-parent h3 {
+    font-family: "Nunito", sans-serif;
+    color: rgb(146, 145, 145);
+}
+
+.seat-parent button {
+    width: 80%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2.5%;
+    font-size: 18px;
+    padding-bottom: 2.5%;
+    font-family: "Noto Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 30px;
+    border: none;
+}
+
+/* SEAT CSS ENDS HERE */
+
+/* INDUSTRY CSS STARTS HERE */
+.industry {
+    padding-top: 5%;
+    background-color: black;
+    width: 100%;
+    padding-bottom: 7%;
+}
+
+.industry-parent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.industry-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 45px;
+}
+
+.span1 {
+    width: 15%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 2%, rgba(245, 104, 39, 0.85) 34%, rgba(116, 56, 29, 0.529) 99%);
+}
+
+.span2 {
+    width: 15%;
+    height: 1px;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 1) 2%, rgba(245, 104, 39, 0.85) 34%, rgba(116, 56, 29, 0.529) 99%);
+}
+
+.industry-title a {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding-top: 2%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 2.5%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(225, 94, 0);
+    border: 1px solid rgb(138, 66, 0);
+    border-radius: 40px;
+    background: linear-gradient(90deg, rgba(64, 25, 9, 0.621) 2%, rgba(145, 68, 32, 0.282) 32%, rgba(127, 60, 28, 0.308) 90%);
+}
+
+.industry-img {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 7%;
+}
+
+.industry-img img {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    padding-top: 1%;
+    height: 220px;
+
+}
+
+.industry-img img:last-child {
+    border-radius: 0;
+    width: 75%;
+}
+
+.industry-box img {
+    position: relative;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.industry-box {
+    width: 90%;
+    margin: auto;
+    border-radius: 8px;
+    padding: 2%;
+    background-color: rgb(25, 9, 0);
+    padding-top: 3%;
+    padding-bottom: 4%;
+
+}
+
+.industry-box span {
+    color: rgb(225, 94, 0);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Noto Sans", sans-serif;
+    position: relative;
+
+}
+
+.industry-box p {
+    color: gray;
+    font-family: "Nunito", sans-serif;
+    padding-left: 2%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.industry-box-info {
+    padding: 3%;
+    border-radius: 7px;
+    width: 95%;
+    border: 1px solid rgba(115, 50, 27, 0.43);
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.419);
+}
+
+.industry-box-info i {
+    color: rgb(225, 94, 0);
+    font-size: 8px;
+    margin-right: 8px;
+}
+
+.industry-box-info span {
+    color: rgb(225, 94, 0);
+    font-size: 18px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.industry-box-info p {
+    color: white;
+    font-size: 13px;
+
+}
+
+/* INDUSTRY CSS HERE */
+
+/* CERTIFICATE CSS STARTS HERE */
+.certificate {
+    padding-top: 5%;
+    background-color: black;
+    width: 100%;
+    padding-bottom: 7%;
+}
+
+.certificate-parent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    gap: 20px;
+}
+
+.certificate-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 45px;
+}
+
+.c1 {
+    width: 15%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 2%, rgba(245, 104, 39, 0.85) 34%, rgba(116, 56, 29, 0.529) 99%);
+}
+
+.c2 {
+    width: 15%;
+    height: 1px;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 1) 2%, rgba(245, 104, 39, 0.85) 34%, rgba(116, 56, 29, 0.529) 99%);
+}
+
+.certificate-logo {
+    padding-top: 3%;
+    border-bottom: 1px solid rgb(51, 27, 6);
+    display: flex;
+}
+
+.title h3 {
+    text-transform: uppercase;
+    color: rgb(225, 94, 0);
+    font-family: "Noto Sans", sans-serif;
+}
+
+.dot {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dot li {
+    display: flex;
+}
+
+.dot i {
+    font-size: 10px;
+    color: rgb(255, 106, 0);
+}
+
+.dot li:nth-child(2) i {
+    color: rgb(206, 116, 52);
+}
+
+.dot li:last-child i {
+    color: rgb(221, 154, 105);
+}
+
+.certificate-title a {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding-top: 1%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 1%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(225, 94, 0);
+    border: 1px solid rgb(138, 66, 0);
+    border-radius: 40px;
+    background: linear-gradient(90deg, rgba(64, 25, 9, 0.621) 2%, rgba(145, 68, 32, 0.282) 32%, rgba(127, 60, 28, 0.308) 90%);
+}
+
+.certificate-box {
+    border: 1px solid rgb(51, 27, 6);
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.logo-box {
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    border: 1px solid rgb(103, 48, 0);
+    border-radius: 10px;
+    padding: 1%;
+    background-color: rgba(255, 68, 0, 0.262);
+}
+
+.logo-box img {
+    padding-top: 12%;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.image {
+    height: 300px;
+    margin: 30px;
+    border: 1px solid rgb(51, 27, 6);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 25%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.view-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(255, 103, 0);
+    border-radius: 25px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image:hover::after {
+    opacity: 1;
+}
+
+.image:hover .view-btn {
+    opacity: 1;
+}
+
+.info {
+    color: gray;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    font-family: "Nunito", sans-serif;
+}
+
+.info p {
+    padding-bottom: 2%;
+}
+
+/* CERTIFICATE CSS ENDS HERE */
+
+/* DEMO CSS STARTS HERE */
+.demo {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(48, 17, 8, 0.99) 0%, rgba(0, 0, 0, 0.94) 14%, rgba(0, 0, 0, 1) 28%);
+}
+
+.demo-parent {
+
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.demo-info {
+    text-align: center;
+}
+
+.demo-info h1 {
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    padding-bottom: 3%;
+}
+
+.demo-info h1 span {
+    color: rgb(225, 94, 0);
+}
+
+.demo-info p {
+    color: gray;
+    font-family: "Nunito", sans-serif;
+    font-size: 22px;
+    padding-bottom: 3%;
+}
+
+.demo-info button {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(225, 94, 0);
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid orange;
+    margin-bottom: 5%;
+    border-radius: 25px;
+    padding: 2%;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.demo-info a {
+    text-decoration: none;
+    color: rgb(225, 94, 0);
+    font-weight: 800;
+    border: 1px solid rgb(225, 94, 0);
+    border-radius: 25px;
+    background-color: rgba(56, 30, 12, 0.686);
+    padding: 3%;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.demo-info h1 {
+    padding-top: 4%;
+}
+
+.demo-vdo {
+    width: 100%;
+}
+
+.demo-vdo iframe {
+    width: 100%;
+    height: 200px;
+    border: 3px solid rgb(225, 94, 0);
+    border-radius: 8px;
+    margin-bottom: 7%;
+}
+
+.demo-vdo iframe:hover {
+    cursor: pointer;
+    transform: scale(1.12);
+}
+
+/* DEMO CSS ENDS HERE */
+
+/* NUMBER CSS STARTS HERE */
+.number {
+    width: 100%;
+    background: black;
+    padding: 3%;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.number-parent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: rgba(34, 33, 33, 0.603);
+    border: 1px solid rgb(19, 19, 19);
+    border-radius: 40px;
+}
+
+.number-box {
+    width: 50%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-bottom: 1px solid rgb(41, 41, 41);
+    border-right: 1px solid rgb(41, 41, 41);
+}
+
+.number-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(225, 94, 0);
+    font-size: 21px;
+    background-color: rgb(26, 13, 4);
+    border: 1px solid rgb(109, 49, 5);
+    border-radius: 18px;
+}
+
+.number-info {
+    text-align: center;
+}
+
+.number-info h2 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.number-info p {
+    margin: 6px 0 0;
+    color: rgb(153, 153, 153);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.rating {
+    width: 100%;
+    padding: 45px 20px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgb(41, 41, 41);
+}
+
+.rating-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.rating-number h2 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.stars {
+    display: flex;
+    gap: 3px;
+}
+
+.stars i {
+    color: rgb(225, 94, 0);
+    font-size: 17px;
+}
+
+.google-rating {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.google-text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.google-text span:nth-child(1) {
+    color: rgb(66, 133, 244);
+}
+
+.google-text span:nth-child(2) {
+    color: rgb(234, 67, 53);
+}
+
+.google-text span:nth-child(3) {
+    color: rgb(251, 188, 5);
+}
+
+.google-text span:nth-child(4) {
+    color: rgb(66, 133, 244);
+}
+
+.google-text span:nth-child(5) {
+    color: rgb(52, 168, 83);
+}
+
+.google-text span:nth-child(6) {
+    color: rgb(234, 67, 53);
+}
+
+.google-rating p {
+    margin: 0;
+    color: rgb(153, 153, 153);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.number-btn {
+    width: 100%;
+    padding: 2%;
+}
+
+.number-btn a {
+
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(255, 103, 0);
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.number-btn a:hover {
+    cursor: pointer;
+    box-shadow: 1px 0 18px rgb(255, 103, 0);
+    transform: translateY(-4px);
+}
+
+/* NUMBER CSS ENDS HERE */
+
+/* ALUMNI CSS STARTS HERE */
+.alumni {
+    background-color: black;
+    width: 100%;
+}
+
+.alumni-title {
+    width: 260px;
+    border-radius: 5px;
+    margin: auto;
+    background: rgb(220, 234, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alumni-title h2 {
+    color: rgb(0, 31, 77);
+    font-family: "Noto Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.alumni-parent {
+    padding-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    flex-wrap: wrap;
+    gap: 34px 20px;
+    justify-content: center;
+}
+
+.alumni-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.alumni-box {
+
+    width: 105px;
+    height: 92px;
+    background: white;
+    border-radius: 10px;
+    border-left: 7px solid orangered;
+    border-right: 7px solid orangered;
+    box-shadow: 0 8px 12px rgba(255, 102, 0, 0.20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.alumni-title h2 span {
+    color: orangered;
+}
+
+.alumni-box img {
+    width: 88%;
+    height: 88%;
+    object-fit: contain;
+    display: block;
+}
+
+/* ALUMNI CSS ENDS HERE */
+
+/* REQUEST CSS STARTS HERE */
+.request {
+    width: 100%;
+    background: linear-gradient(120deg, rgb(5, 5, 5), rgb(36, 18, 5));
+    padding: 30px 0;
+}
+
+.request-parent {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.request-left {
+    width: 100%;
+}
+
+.request-left h1 {
+    color: white;
+    font-size: 29px;
+    font-family: "Noto Sans", sans-serif;
+    padding-bottom: 4%;
+}
+
+.request-left h1 span {
+    color: rgb(225, 94, 0);
+}
+
+.request-left p {
+    color: gray;
+    font-size: 17px;
+    font-family: "Nunito", sans-serif;
+    padding-bottom: 4%;
+}
+
+.request-box {
+    width: 100%;
+    border: 1px solid rgb(59, 33, 15);
+    border-radius: 10px;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(41, 0, 0, 0.777) 80%, rgba(63, 10, 3, 0.497) 100%);
+    padding: 18px;
+    margin-bottom: 22px;
+    display: flex;
+    gap: 15px;
+}
+
+.request-icon {
+    width: 35px;
+    color: rgb(225, 94, 0);
+    text-align: center;
+    padding-top: 3px;
+}
+
+.request-info {
+    width: 100%;
+}
+
+.request-info h3 {
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    padding-bottom: 3%;
+}
+
+.request-info p {
+    color: gray;
+    font-size: 16px;
+}
+
+.request-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.request-bottom span {
+    position: relative;
+    top: -8px;
+    width: 8%;
+    height: 4px;
+    border-radius: 5px;
+}
+
+.r1 {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(41, 0, 0, 0.95) 11%, rgba(232, 83, 9, 1) 72%);
+}
+
+.r2 {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(41, 0, 0, 0.95) 11%, rgba(232, 83, 9, 1) 72%);
+}
+
+.request-bottom p {
+    color: rgb(225, 94, 0);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.request-right {
+    width: 100%;
+}
+
+.request-right h2 {
+    color: rgb(225, 94, 0);
+    font-size: 32px;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.request-form {
+    width: 100%;
+    background: rgba(10, 10, 10, 0.8);
+    border-radius: 10px;
+    padding: 25px 20px;
+}
+
+.form-row {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-row i:first-child {
+    width: 40px;
+    color: rgb(225, 94, 0);
+    font-size: 23px;
+    text-align: left;
+}
+
+.form-row input,
+.form-row select {
+    width: 100%;
+    height: 46px;
+    border: 1px solid rgb(115, 49, 11);
+    border-radius: 25px;
+    background: rgb(25, 25, 25);
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.form-row input::placeholder {
+    color: gray;
+}
+
+.form-row select {
+    appearance: none;
+    padding-right: 40px;
+}
+
+.form-row {
+    position: relative;
+}
+
+.form-row select {
+    width: 100%;
+    height: 46px;
+    border: 1px solid rgb(115, 49, 11);
+    border-radius: 25px;
+    background: rgb(25, 25, 25);
+    color: gray;
+    padding: 0 40px 0 15px;
+
+}
+
+.select-arrow {
+    position: absolute;
+    right: 18px;
+    color: rgb(225, 94, 0);
+    font-size: 13px;
+}
+
+.request-form button {
+    width: 80%;
+    height: 45px;
+    display: block;
+    margin: 5px auto 0 auto;
+    border: none;
+    border-radius: 25px;
+    background: rgb(225, 94, 0);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* REQUEST CSS ENDS HERE */
+
+/* FOOTER CSS STARTS HERE */
+.footer {
+    width: 100%;
+    background: linear-gradient(148deg, rgba(0, 0, 0, 1) 0%, rgba(15, 2, 2, 1) 19%, rgb(13, 8, 35) 76%, rgba(232, 83, 9, 1) 100%);
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.footer-parent {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.footer-about,
+.footer-service,
+.footer-courses {
+    width: 100%;
+}
+
+.footer-about {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.footer-logo img {
+    width: 55px;
+    height: 55px;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.footer-logo h2 span {
+    background: linear-gradient(59deg, rgb(139, 42, 155) 0%, rgb(255, 122, 0) 35%, rgb(244, 13, 13) 65%, rgb(75, 15, 50) 100%);
+    background-clip: text;
+    font-family: "Noto Sans", sans-serif;
+    color: transparent;
+}
+
+.footer-about p {
+    margin: 0 0 12px;
+    font-size: 19px;
+    color: white;
+}
+
+.footer-about p span {
+    color: rgb(255, 103, 0);
+}
+
+.footer-about h3 {
+    margin: 32px 0 20px;
+    font-size: 23px;
+}
+
+.footer-icon {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.footer-icon li img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.footer-service h3 {
+    text-decoration: underline 2px rgb(255, 103, 0);
+    margin-bottom: 1%;
+    font-size: 27px;
+}
+
+.footer-service ul li a {
+    text-decoration: none;
+    color: rgb(181, 179, 179);
+    font-size: 18px;
+}
+
+.footer-service ul {
+    list-style: none;
+}
+
+.footer-courses h3 {
+    text-decoration: underline 2px rgb(255, 103, 0);
+    margin-bottom: 1%;
+    font-size: 27px;
+}
+
+.footer-courses ul li a {
+    text-decoration: none;
+    color: rgb(181, 179, 179);
+    font-size: 18px;
+}
+
+.footer-courses ul {
+    list-style: none;
+}
+
+.footer-service ul li a:hover {
+    cursor: pointer;
+    color: rgb(255, 103, 0);
+}
+
+.footer-course ul li a:hover {
+    cursor: pointer;
+    color: rgb(255, 103, 0);
+}
+
+.branches {
+    width: 100%;
+    padding: 25px 5%;
+    border-top: 1px solid rgb(70, 70, 70);
+    border-bottom: 1px solid rgb(70, 70, 70);
+    color: white;
+}
+
+.branches h2 {
+    margin: 0 0 25px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.branches-parent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.branch-box {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.branch-box h3 {
+    margin: 0 0 10px;
+    color: rgb(255, 103, 0);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.branch-box p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+
+.branch-box p span {
+    color: rgb(0, 92, 255);
+}
+
+.footer-bottom {
+    width: 90%;
+    margin: auto;
+    padding: 25px 0;
+    border-top: 1px solid rgb(68, 68, 68);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgb(225, 94, 0);
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: white;
+    font-size: 17px;
+}
+
+.chat {
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+}
+
+.chat:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+.chat img {
+    width: 120px;
+    display: block;
+}
+
+.whatsapps {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+
+.whatsapps img:hover{
+    cursor: pointer;
+    box-shadow:0  0 5px rgb(255, 102, 0);
+    transform: scale(1.09);
+    
+}
+
+.whatsapps img {
+    border-radius: 50%;
+    width: 75px;
+    display: block;
+}
+
+/* FOOTER CSS ENDS HERE */
+
+/* COURSE CSS STARTS HERE */
+.course {
+    width: 100%;
+    padding: 20px 15px;
+    background-color: black;
+}
+
+.course-btn {
+    display: flex;
+    color: white;
+    position: relative;
+    top: 40px;
+    margin-bottom: 6%;
+    padding: 2%;
+    left: 135px;
+    border-radius: 25px;
+    gap: 15px;
+    background-color: rgb(255, 122, 0);
+    width: 40%;
+}
+
+.course-btn a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 800;
+}
+
+.course-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.course-title h1 {
+    color: rgb(225, 94, 0);
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.course-title h3 {
+    font-size: 15px;
+    font-family: "Nunito", sans-serif;
+    color: white;
+}
+
+.course-title h3 span {
+    color: rgb(225, 94, 0);
+    text-transform: uppercase;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.course-title input {
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+    margin-top: 15px;
+    padding: 0 15px;
+    border: 2px solid rgb(255, 101, 0);
+    border-radius: 25px;
+    outline: none;
+}
+
+.course-parent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category {
+    width: 70%;
+    margin: auto;
+    background: rgb(0, 23, 45);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.category-title h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+}
+
+.category-title hr {
+    border: none;
+    height: 1px;
+    background: rgb(8, 117, 255);
+    margin-bottom: 10px;
+}
+
+.category-list {
+    list-style: none;
+}
+
+.category-list li {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 6px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.category-list li:hover {
+    background: rgba(96, 54, 29, 0.629);
+}
+
+.category-list li h4 {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.category-list li i:first-child {
+    width: 18px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.category-list li i:last-child {
+    font-size: 11px;
+}
+
+.box-parent {
+    width: 100%;
+    display: grid;
+    gap: 15px;
+}
+
+.box {
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+    border-radius: 7px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: scale(1.12);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.box h2 {
+    font-size: 18px;
+    margin: 12px 10px 8px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.box p {
+    font-size: 15px;
+    color: rgb(80, 80, 80);
+    margin: 0 10px 8px;
+    font-weight: 670;
+}
+
+.tick {
+    margin: 5px 10px;
+}
+
+.tick p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    color: rgb(1, 1, 1);
+    margin: 5px 0;
+}
+
+.tick p span {
+    color: green;
+    font-size: 13px;
+}
+
+.tick strong {
+    color: rgb(119, 119, 119);
+}
+
+.box-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 10px;
+}
+
+.box-bottom div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.box-bottom .fa-star {
+    color: rgb(255, 196, 0);
+}
+
+.box-bottom span {
+    font-size: 14px;
+    color: rgb(66, 66, 66);
+    font-weight: 600;
+}
+
+.box-bottom button {
+    border: none;
+    background: rgb(255, 101, 0);
+    color: white;
+    font-weight: 660;
+    font-size: 10px;
+    padding: 9px 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px gray;
+}
+
+.box-bottom button i {
+    margin-left: 3px;
+}
+
+/* COURSE CSS ENDS HERE */
+
+/* BLOG CSS STARTS HERE */
+.Blog {
+    width: 100%;
+    padding: 40px 15px;
+    background-color: black;
+}
+
+
+.Blog h1 {
+    text-align: center;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.Blog h1 span {
+    color: rgb(255, 101, 0);
+}
+
+.blog-parent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blog-parent .a1,
+.blog-parent .a2 {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 101, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.blog-parent .a1:hover,
+.blog-parent .a2:hover {
+    background-color: rgb(225, 94, 0);
+}
+
+.blog-box {
+    width: 100%;
+    height: 370px;
+    position: relative;
+    border: 5px solid white;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.blog-box button {
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 15px;
+    border: none;
+    background-color: rgb(255, 101, 0);
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.blog-box:hover button {
+    opacity: 1;
+    visibility: visible;
+}
+
+.blog-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-box::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+.blog-box div {
+    position: absolute;
+    left: 25px;
+    right: 20px;
+    bottom: 25px;
+    color: white;
+}
+
+.blog-box h2 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 27px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.blog-box p {
+    font-family: "Nunito", sans-serif;
+    font-size: 19px;
+    color: white;
+    margin: 0;
+}
+
+.blog-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.blog-button button {
+    border: none;
+    background-color: rgb(255, 101, 0);
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+.blog-button button:hover {
+    background-color: rgb(194, 64, 3);
+    cursor: pointer;
+}
+
+/* BLOG CSS ENDS HERE */
+
+/* SUCCESS CSS STARTS HERE */
+.success {
+    background-color: black;
+}
+
+.success-title {
+    width: 95%;
+    margin: auto;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.success-title h1 {
+    color: white;
+    font-family: "Nunto", sans-serif;
+    padding-bottom: 5%;
+}
+
+.success-title p {
+    padding-bottom: 5%;
+    color: gray;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+}
+
+.success-title span {
+    font-size: 42px;
+    color: rgb(255, 101, 0);
+}
+
+.success-parent {
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+    background: linear-gradient(90deg, rgba(155, 95, 42, 0.622) 0%, rgba(2, 3, 10, 0.544) 40%, rgba(17, 26, 52, 0.86) 100%);
+    padding-top: 5%;
+    padding-bottom: 25%;
+}
+
+.success-box {
+    width: 95%;
+    padding: 4%;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px dashed red;
+    background-color: white;
+}
+
+.success-box h3 {
+    font-family: "Nunto", sans-serif;
+    padding-bottom: 3%;
+    font-size: 27px;
+}
+
+.success-box h3 i {
+    color: green;
+}
+
+.success-box p {
+    font-family: "Nunito", sans-serif;
+    color: rgb(54, 53, 53);
+    font-weight: 680;
+}
+
+.success-box span {
+    color: black;
+    font-weight: 800;
+}
+
+/* SUCCESS CSS ENDS HERE */
+
+/* COLAB CSS STARTS HERE */
+.colab {
+    width: 100%;
+    padding: 40px 15px;
+    background-color: black;
+}
+
+.colab h1 {
+    text-align: center;
+    color: rgb(255, 101, 0);
+    font-family: "Noto Sans", sans-serif;
+    font-size: 42px;
+    margin: 0 0 20px;
+}
+
+.colab hr {
+    width: 160px;
+    height: 5px;
+    border: none;
+    background-color: rgb(255, 150, 70);
+    margin: 0 auto 50px;
+}
+
+.colab-parent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.colab-box {
+    width: 100%;
+    height: 560px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+.colab-img {
+    width: 100%;
+    height: 180px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-top: 5px solid rgb(255, 101, 0);
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.colab-img img {
+    width: 100%;
+    height: 145px;
+    background-color: white;
+    border-radius: 7px;
+    transition: transform 0.4s ease;
+}
+
+.colab-progress {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 7px;
+    accent-color: rgb(255, 101, 0);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.colab-box:hover .colab-progress {
+    transform: scaleX(1);
+}
+
+.colab-box:hover .colab-img img {
+    transform: scale(1.05);
+}
+
+.colab-box:hover .colab-btn {
+    transform: translateY(-8px);
+}
+
+.colab-box h2 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin: 35px 10px 20px;
+}
+
+.colab-info {
+    border-top: 1px solid rgb(97, 97, 246);
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.colab-loc {
+    color: white;
+    margin: 0 10px 35px;
+    gap: 10px;
+    font-family: "Nunito", sans-serif;
+}
+
+.colab-loc i {
+    color: rgb(255, 101, 0);
+    font-size: 18px;
+}
+
+.colab-info {
+    width: 100%;
+    min-height: 20px;
+    background-color: rgb(16, 25, 43);
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+.colab-info p {
+    margin: 0;
+    color: rgb(230, 230, 230);
+    font-size: 16px;
+    padding-bottom: 2%;
+    font-family: "Nunito", sans-serif;
+}
+
+.colab-info i {
+    width: 22px;
+    color: rgb(255, 101, 0);
+    margin-right: 5px;
+}
+
+.colab-info span {
+    color: rgb(255, 101, 0);
+}
+
+.colab-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    transition: transform 0.4s ease;
+}
+
+
+.colab-btn button {
+    border: none;
+    background-color: rgb(255, 101, 0);
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+/* COLAB CSS ENDS HERE */
+
+/* JOB CSS STARTS HERE */
+.job-image-wrapper {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.job-image-wrapper a {
+    display: block;
+}
+
+.job-image-wrapper img {
+    width: 190px;
+    height: auto;
+}
+
+.job-image-wrapper img:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+}
+
+/* JOB CSS ENDS HERE */
+
+
+/* TABLET SCREEN */
+@media(min-width:768px) {
+    .home-page {
+        height: 500px;
+    }
+
+    .home-page-parent {
+        width: 46%;
+    }
+
+    .home-page-parent h1 {
+        font-size: 27px;
+    }
+
+    .home-page-parent p {
+        font-size: 16px;
+    }
+
+    .why-parent {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .why-box {
+        width: 210px;
+        height: 120px;
+    }
+
+    .why h1 {
+        font-size: 39px;
+    }
+
+    .why-box {
+        font-size: 15px;
+    }
+
+    .circle-parent {
+        width: 90%;
+        margin: auto;
+        flex-direction: row;
+    }
+
+    .circle-info {
+        width: 50%;
+    }
+
+    .circle-info h1 {
+        font-size: 39px;
+    }
+
+    .circle-info p {
+        font-size: 15px;
+    }
+
+    .circle-img {
+        width: 45%;
+    }
+
+    .seat-parent {
+        width: 90%;
+        margin: auto;
+    }
+
+    .seat-parent button {
+        width: 40%;
+        padding: 1%;
+    }
+
+    .seat-parent h1 {
+        font-size: 37px;
+    }
+
+    .seat-parent h1 span::after {
+        width: 202px;
+    }
+
+    .industry-parent {
+        width: 100%;
+    }
+
+    .industry-title a {
+        width: 40%;
+    }
+
+    .industry-title span {
+        width: 32%;
+    }
+
+    .industry-img {
+        width: 85%;
+        margin: auto;
+        gap: 50px;
+    }
+
+    .industry-img img {
+        height: 350px;
+        border-radius: 0;
+    }
+
+    .industry-box {
+        padding-top: 1%;
+    }
+
+    .industry-box span {
+        font-size: 16px;
+    }
+
+    .demo-parent {
+        flex-direction: row;
+        gap: 10%;
+    }
+
+    .demo-info {
+        text-align: start;
+        width: 45%;
+    }
+
+    .demo-info h1 {
+        padding-top: 15%;
+        font-size: 40px;
+    }
+
+    .demo-info button {
+        margin-top: 10%;
+    }
+
+    .number-box {
+        width: 25%;
+        height: 140px;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .number-info {
+        text-align: left;
+    }
+
+    .rating {
+        padding: 30px 20px 25px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .number-btn {
+        width: 30%;
+        padding: 0;
+    }
+
+    .number-btn a {
+        width: 90%;
+    }
+
+    .request-form {
+        width: 60%;
+        margin: auto;
+    }
+
+    .request-box {
+        padding-bottom: 0;
+        padding-top: 3%;
+    }
+
+    .request-left h1 {
+        text-align: left;
+        font-size: 44px;
+    }
+
+    .request-bottom p {
+        font-size: 18px;
+    }
+
+    .request-bottom span {
+        top: -13px;
+    }
+
+    .footer-parent {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .footer-about {
+        width: 35%;
+        text-align: left;
+    }
+
+    .footer-service {
+        width: 25%;
+    }
+
+    .footer-courses {
+        width: 30%;
+    }
+
+    .footer-logo {
+        justify-content: flex-start;
+    }
+
+    .footer-logo h2 {
+        font-size: 24px;
+    }
+
+    .footer-about p {
+        font-size: 17px;
+    }
+
+    .footer-icon {
+        justify-content: flex-start;
+    }
+
+    .footer-service h3,
+    .footer-courses h3 {
+        font-size: 24px;
+    }
+
+    .footer-service ul,
+    .footer-courses ul {
+        padding-left: 0;
+    }
+
+    .branches-parent {
+        justify-content: space-between;
+    }
+
+    .branch-box {
+        width: 33.33%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+    .chat img {
+        width: 100px;
+    }
+
+    .whatsapps img {
+        width: 70px;
+    }
+
+    .certificate-title a {
+        width: 40%;
+        font-size: 18px;
+    }
+
+    .certificate-title span {
+        width: 32%;
+    }
+
+    .certificate-parent {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .certificate-box {
+        width: 360px;
+    }
+
+    .course-parent {
+        flex-direction: column;
+    }
+
+    .category {
+        width: 40%;
+        margin: auto;
+    }
+
+    .box-parent {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: auto;
+        gap: 70px;
+    }
+
+    .box {
+        width: 45%;
+    }
+
+    .course-btn {
+        left: 270px;
+        width: 25%;
+    }
+
+    .blog-parent {
+        flex-direction: row;
+    }
+
+    .colab-parent {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 90px;
+
+    }
+
+    .colab-box {
+        width: 43%;
+    }
+
+    .alumni-title {
+        width: 330px;
+    }
+
+    .alumni-title h2 {
+        font-size: 25px;
+    }
+
+    .alumni-row {
+        gap: 20px;
+    }
+
+    .alumni-box {
+        width: 135px;
+        height: 100px;
+    }
+
+
+    .navbar {
+        height: 100px;
+        padding: 10px 30px;
+    }
+
+    .mobile-menu-btn {
+        width: 45px;
+        height: 45px;
+
+        font-size: 28px;
+    }
+
+    .logo img {
+        width: 220px;
+    }
+
+    .callback {
+        width: 50px;
+        height: 50px;
+    }
+
+    .callback::before {
+        font-size: 40px;
+    }
+
+    .success-parent {
+        padding-bottom: 20%;
+    }
+
+    .success-title h1 {
+        font-size: 44px;
+    }
+
+    .success-title span {
+        font-size: 57px;
+    }
+
+    .success-box {
+        padding-bottom: 2%;
+        padding-top: 2%;
+        padding-left: 1.3%;
+        padding-right: 1.3%;
+    }
+}
+
+/* LAPTOP SCREEN */
+@media(min-width:1024px) {
+    .home-page {
+        height: 700px;
+    }
+
+    .home-page-parent {
+        width: 36%;
+        top: 180px;
+    }
+
+    .home-page-parent h1 {
+        font-size: 45px;
+    }
+
+    .home-page-parent p {
+        font-size: 25px;
+    }
+
+    .why-parent {
+        width: 70%;
+        margin: auto;
+    }
+
+    .why-box {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        padding: 0;
+        border-radius: 40px;
+    }
+
+    .why-box i {
+        width: auto;
+        height: auto;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+    }
+
+    .circle {
+        padding-top: 3%;
+        background: linear-gradient(90deg, rgba(5, 3, 3, 1) 0%, rgba(18, 5, 0, 1) 64%, rgba(18, 5, 0, 1) 81%, rgba(89, 22, 0, 1) 100%);
+    }
+
+    .circle-info {
+        width: 45%;
+    }
+
+    .circle-info p {
+        font-size: 19px;
+    }
+
+    .circle-info h1 {
+        font-size: 45px;
+    }
+
+    .circle-img img {
+        height: 450px;
+    }
+
+    .seat-parent {
+        width: 52%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .seat-parent button {
+        margin-top: 2%;
+    }
+
+    .industry {
+        width: 100%;
+    }
+
+    .industry-box {
+        width: 95%;
+        height: 280px;
+        margin: auto;
+
+    }
+
+    .industry-img {
+        flex-direction: row;
+        width: 75%;
+    }
+
+    .industry-img img {
+        height: 370px;
+    }
+
+    .industry-img img:first-child {
+        width: 590px;
+    }
+
+    .industry-img img:last-child {
+        width: 390px;
+    }
+
+    .industry-box img {
+        position: relative;
+        top: 90x;
+        padding-top: 0;
+    }
+
+    .industry-box-info {
+        height: 120px;
+        padding-top: 10px;
+    }
+
+    .industry-box p {
+        padding-top: 2%;
+    }
+
+    .industry-box-info p {
+        padding-top: 1%;
+        font-size: 15px;
+    }
+
+    .industry-title a {
+        width: 25%;
+        padding: 10px;
+    }
+
+    .industry-title span {
+        width: 50%;
+    }
+
+    .demo-info {
+        width: 50%;
+    }
+
+    .demo-vdo {
+        width: 60%;
+    }
+
+    .demo-vdo iframe {
+        height: 300px;
+    }
+
+    .demo-info button {
+        margin-top: 5%;
+    }
+
+    .demo-info h1 {
+        padding-top: 7%;
+    }
+
+    .request-parent {
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+    }
+
+    .request-left {
+        width: 55%;
+    }
+
+    .request-form {
+        width: 90%;
+        margin: auto;
+    }
+
+    .request-left h1 {
+        font-size: 30px;
+    }
+
+    .request-right {
+        width: 45%;
+    }
+
+    .number {
+        padding: 3% 0.5%;
+
+    }
+
+    .number-parent {
+        flex-wrap: nowrap;
+        width: 90%;
+        margin: auto;
+        border-radius: 80px;
+    }
+
+    .number-box {
+        width: 16.8%;
+        height: 150px;
+        border-bottom: 0;
+    }
+
+    .rating {
+        width: 32.8%;
+        height: 155px;
+        padding: 20px 25px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        border-bottom: 0;
+    }
+
+    .rating-number {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .rating-number h2 {
+        font-size: 38px;
+    }
+
+    .stars {
+        gap: 3px;
+    }
+
+    .google-rating {
+        position: absolute;
+        left: 25px;
+        bottom: 22px;
+        margin: 0;
+        gap: 10px;
+    }
+
+    .number-btn {
+        width: 42%;
+        padding: 0;
+    }
+
+    .number-btn a {
+        width: 100%;
+        padding: 16px 10px;
+        font-size: 16px;
+    }
+
+    .footer-parent {
+        width: 80%;
+        margin: auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .footer-about {
+        width: 27%;
+        text-align: left;
+    }
+
+    .footer-service {
+        width: 20%;
+    }
+
+    .footer-courses {
+        width: 35%;
+    }
+
+    .footer-logo,
+    .footer-icon {
+        justify-content: flex-start;
+    }
+
+    .footer-service ul,
+    .footer-courses ul {
+        padding-left: 0;
+    }
+
+    .footer-courses ul {
+        column-count: 2;
+        column-gap: 30px;
+    }
+
+    .branches-parent {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .branch-box {
+        width: auto;
+        flex: 1;
+    }
+
+    .footer-bottom {
+        width: 95%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-links {
+        flex-wrap: nowrap;
+    }
+
+    .branch-box p span {
+        color: white;
+    }
+
+    .branch-box p span:hover {
+        color: orangered;
+        cursor: pointer;
+    }
+
+    .certificate-title span {
+        width: 50%;
+    }
+
+    .certificate-parent {
+        width: 90%;
+        margin: auto;
+        gap: 10px;
+    }
+
+    .certificate-box {
+        width: 390px;
+    }
+
+    .course-parent {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .category {
+        width: 20%;
+        margin: 0;
+    }
+
+    .box-parent {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .box {
+        width: 26%;
+    }
+
+    .course-btn {
+        width: 11%;
+        padding: 10px;
+        left: 700px;
+    }
+
+    .colab-parent {
+        justify-content: space-between;
+        width: 95%;
+        flex-wrap: nowrap;
+        margin: auto;
+    }
+
+    .colab-box {
+        width: 70%;
+    }
+
+    .alumni-title {
+        width: 410px;
+    }
+
+    .alumni-title h2 {
+        font-size: 32px;
+    }
+
+
+    .alumni-box {
+        width: 145px;
+        height: 100px;
+    }
+
+    .alumni-row {
+        gap: 20px;
+    }
+
+    .top {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 42px;
+        background: rgb(0, 0, 0);
+    }
+
+    .top-header {
+        width: 100%;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 20px;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    .top-left {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+    }
+
+    .top-link {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .top-link a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 5px 0;
+    }
+
+    .top-link a:hover {
+        color: rgb(255, 102, 0);
+    }
+
+    .progress-line {
+        width: 0;
+        height: 2px;
+        background: rgb(255, 102, 0);
+        margin-top: 2px;
+        transition: width 0.3s ease;
+    }
+
+    .top-link:hover .progress-line {
+        width: 100%;
+    }
+
+    .top-left span {
+        color: rgb(255, 255, 255);
+    }
+
+
+    .top-left .webinar {
+        color: rgb(255, 255, 255);
+        padding: 6px 15px;
+        border-radius: 20px;
+        background: linear-gradient(90deg,
+                rgb(255, 102, 0),
+                rgb(255, 157, 66));
+    }
+
+    .webinar-link progress {
+        display: none;
+    }
+
+    .top-icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .top-icon li {
+        display: flex;
+        align-items: center;
+    }
+
+    .top-icon img {
+        width: 27px;
+        height: 27px;
+        object-fit: contain;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 42px;
+        left: 0;
+        width: 100%;
+        height: 78px;
+        display: flex;
+        align-items: center;
+        padding: 10px 4%;
+        background: rgb(0, 0, 0);
+        box-sizing: border-box;
+    }
+
+    .mobile-menu-btn {
+        display: none;
+    }
+
+    .top-logo {
+        position: absolute;
+        width: 220px;
+        left: 110px;
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .top-logo img {
+        width: 70px;
+        height: auto;
+        display: block;
+    }
+
+    .nav-menu {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .nav-item {
+        position: static;
+    }
+
+    .nav-item a {
+        position: relative;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 500;
+        white-space: nowrap;
+        padding: 8px 0;
+    }
+
+    .nav-item a:hover {
+        color: rgb(255, 102, 0);
+    }
+
+    .nav-item a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: rgb(255, 102, 0);
+        transition: width 0.3s ease;
+    }
+
+    .nav-item a:hover::after {
+        width: 100%;
+    }
+
+    .callback {
+        width: auto;
+        height: auto;
+        padding: 14px 20px;
+        border: 0;
+        border-radius: 30px;
+        color: rgb(255, 255, 255);
+        background: linear-gradient(90deg,
+                rgb(255, 102, 0),
+                rgb(255, 157, 66));
+        font-size: 15px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .callback::before {
+        display: none;
+    }
+
+    .mega-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 25px;
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+
+    .nav-item:hover .mega-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .job-menu {
+        width: 625px;
+        max-height: 570px;
+    }
+
+    .menu-title {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0 0 25px;
+    }
+
+    .course-list {
+        height: 450px;
+        overflow-y: auto;
+        padding-right: 8px;
+    }
+
+    .course-item {
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 9px 14px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 10px;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .course-item img {
+        width: 64px;
+        height: 45px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+
+    .it-menu {
+        display: flex;
+        gap: 25px;
+        width: 100%;
+        height: 600px;
+    }
+
+    .it-domains {
+        width: 48%;
+        padding-right: 8px;
+        box-sizing: border-box;
+    }
+
+    .it-courses {
+        width: 52%;
+        padding-right: 8px;
+        box-sizing: border-box;
+    }
+
+    .it-menu h2 {
+        text-align: center;
+        font-size: 23px;
+        margin: 0 0 18px;
+    }
+
+    .it-domain {
+        min-height: 55px;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        margin-bottom: 12px;
+        background: rgb(6, 31, 59);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    .it-domain.active {
+        background: linear-gradient(90deg,
+                rgb(255, 102, 0),
+                rgb(53, 16, 0));
+    }
+
+    .it-domain h6 {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 0;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .it-domain h6 span {
+        width: 25px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+
+    .it-course-card {
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 12px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 10px;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+    }
+
+    .it-course-card img {
+        width: 70px;
+        height: 45px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+
+    .it-course-card span {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .designing-menu {
+        display: flex;
+        gap: 25px;
+        min-height: 500px;
+    }
+
+    .design-domains {
+        width: 50%;
+    }
+
+    .design-courses {
+        width: 50%;
+    }
+
+    .designing-menu h2 {
+        text-align: center;
+        margin: 0 0 20px;
+    }
+
+    .design-domain {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 20px;
+        margin-bottom: 12px;
+        background: rgb(6, 31, 59);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+
+    .design-domain.active {
+        background: linear-gradient(90deg,
+                rgb(255, 102, 0),
+                rgb(53, 16, 0));
+    }
+
+    .design-domain span {
+        width: 25px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+
+    .design-domain h6 {
+        margin: 0;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+    .design-domain span{
+        color:white;
+    }
+
+    .design-card {
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 10px;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+    }
+
+    .design-card img {
+        width: 65px;
+        height: 45px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+
+    .design-card span {
+        font-weight: bold;
+    }
+
+    .top-logo h4 {
+        top: 20px;
+    }
+
+    .success-parent {
+        padding-bottom: 10%;
+        padding-top: 1%;
+    }
+
+    .success-box h3 {
+        padding-bottom: 1%
+    }
+
+    .success-box {
+        padding: 1%;
+    }
+}
