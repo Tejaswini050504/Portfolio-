@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-MART WEBSITE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+
+        <!-- TOP DIV START HERE -->
+        <div class="top">
+            <div class="top-image">
+                <img src="dmart-images/logo.png" alt="">
+            </div>
+
+            <div class="top-loc" id="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Viman Nagar</span>
+                <i class="fa-solid fa-chevron-down"></i>
+                <marquee scrollamount="2">Maharashtra, India</marquee>
+            </div>
+
+            <div class="top-home">
+                <p>Earliest <strong>Home Delivery</strong> available</p>
+                <p>
+                    <i class="fa-regular fa-clock"></i>
+                    Tomorrow 07:00 AM - 10:00 AM
+                </p>
+            </div>
+
+            <div class="top-search">
+                <input type="text" id="searchInput" placeholder="Search for " />
+                <span id="placeholderText">Butter</span>
+                <button>search</button>
+            </div>
+
+            <div class="top-sign" id="signup">
+                <i class="fa-regular fa-user"></i>
+                <span>Sign In / Register</span>
+            </div>
+
+            <div class="top-bell">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <div class="top-cart" id="topCart">
+                <div class="cart-icon">
+                    <span id="cartCount">0</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <span id="cartAmount">&#8377;0</span>
+            </div>
+
+        </div>
+        <!-- TOP DIV ENDS HERE -->
+
+        <nav>
+            <div class="nav-cate">
+                <i class="fa-solid fa-bars"></i>
+                <span>All Categories</span>
+            </div>
+
+            <div class="nav-list">
+
+                <a href="#" id="dmartGroceryLink">DMart Grocery</a>
+                <a href="">Ready To Cook</a>
+                <a href="">Beverages</a>
+                <a href="">Biscuits & Cookies</a>
+                <a href="">Bath & Body</a>
+                <a href="">Detergent & Fabric Care</a>
+                <a href="">Cleaners</a>
+            </div>
+        </nav>
+
+
+
+        <!-- LOCATION POP UP -->
+        <div class="top-loc-1" id="locationPopup">
+
+            <div class="top-loc-box">
+
+                <div class="close" id="close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+
+                <div class="loc-box-top">
+                    <h2>Choose delivery location</h2>
+
+                    <div class="search-box">
+                        <input type="text" placeholder="Search for area, street name or pincode...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="loc-box-down">
+
+                    <h4>Recent Search</h4>
+
+                    <div class="loc-search">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>
+                            <h4>411014</h4>
+                            <p>Kharadi, Pune, Maharashtra, India</p>
+                        </span>
+                    </div>
+
+                    <div class="loc-search">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>
+                            <h4>411047</h4>
+                            <p>Lohegaon, Pune, Maharashtra, India</p>
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SIGN-IN  POP UP -->
+        <div class="top-sign-1" id="signinpopup">
+
+            <div class="sign-in-box">
+
+                <div class="close1" id="close1">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+
+                <div class="Sign-img">
+                    <img src="dmart-images/sign.png" alt="">
+                </div>
+
+                <div class="sign-head">
+                    <h2>Let's Get You Logged In</h2>
+                </div>
+
+                <div class="sign-down">
+                    <h4>Enter your 10 digit mobile number</h4>
+                    <input type="text" placeholder="+91">
+                    <p>By continuing, you agree to our <span>Terms,Refunds </span>
+                        and <span>Privacy Policy</span></p>
+                    <button>Continue</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- HEADER ENDS HERE -->
+
+
+
+    <!-- MAIN STARTS HERE -->
+    <main>
+        <!-- SLIDER1 SECTION STARTS HERE -->
+        <div class="slider1">
+            <div class="slides" id="slides">
+                <div class="slide">
+                    <img src="dmart-images/s1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="dmart-images/s2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="dmart-images/s3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- SLIDER1 SECTION ENDS HERE -->
+
+        <!-- CATEGORY SECTION STARTS HERE -->
+        <section class="category">
+
+            <h3>Popular Categories</h3>
+
+            <div class="category-parent">
+
+                <div class="left-arrow" id="leftArrow">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+
+                <div class="category-slider">
+
+                    <div class="category-track" id="categorytrack">
+
+                        <div class="category-box">
+                            <img src="dmart-images/pc2.png" alt="">
+                            <h4>Dairy</h4>
+                        </div>
+                        <div class="category-box">
+                            <img src="dmart-images/pc3.png" alt="">
+                            <h4>Tea</h4>
+                        </div>
+                        <div class="category-box">
+                            <img src="dmart-images/pc4.png" alt="">
+                            <h4>Soft Drink</h4>
+                        </div>
+                        <div class="category-box">
+                            <img src="dmart-images/pc5.png" alt="">
+                            <h4>Cleaners</h4>
+                        </div>
+                        <div class="category-box">
+                            <img src="dmart-images/pc6.png" alt="">
+                            <h4>Bath Soaps</h4>
+                        </div>
+                        <div class="category-box">
+                            <img src="dmart-images/pc7.png" alt="">
+                            <h4>Toothpaste</h4>
+                        </div>
+                        <div class="category-box">
+                            <img src="dmart-images/pc1.png" alt="">
+                            <h4>Shampoos</h4>
+                        </div>
+                        <div class="category-box">
+                            <img src="dmart-images/pc8.png" alt="">
+                            <h4>Pooja Needs</h4>
+                        </div>
+                        <div class="category-box">
+                            <img src="dmart-images/pc9.png" alt="">
+                            <h4>Towels</h4>
+                        </div>
+                        <div class="category-box">
+                            <img src="dmart-images/pc10.png" alt="">
+                            <h4>Bath Utility</h4>
+                        </div>
+
+                        <div class="category-box">
+                            <img src="dmart-images/pc11.png" alt="">
+                            <h4>Coffee</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="right-arrow" id="rightArrow">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- CATEGORY SECTION ENDS HERE -->
+
+        <!-- SHOP SECTION  START HERE -->
+        <section class="shop">
+            <img src="dmart-images/s4.jpg" alt="">
+        </section>
+        <!-- SHOP SECTION ENDS HERE  -->
+
+        <!-- MONSOON SECTION STARTS HERE -->
+        <section class="monsoon">
+
+            <h3>Big Savings On Monsoon Needs</h3>
+
+            <div class="monsoon-parent">
+
+                <div class="monsoon-left">
+                    <div>
+                        <img src="dmart-images/monsoon-musthaves.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="monsoon-middle">
+                    <div class="middle-box">
+                        <div><img src="dmart-images/monsoon-appliances.png" alt=""></div>
+                    </div>
+
+                    <div class="middle-box">
+                        <div><img src="dmart-images/monsoon-houshold.png" alt=""></div>
+                    </div>
+
+                    <div class="middle-box">
+                        <div> <img src="dmart-images/monsoon-footware.png" alt=""></div>
+                    </div>
+
+                    <div class="middle-box">
+                        <div> <img src="dmart-images/monsoon-snacks.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="monsoon-right">
+                    <div><img src="dmart-images/s13.jpg" alt=""></div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- MONSOON SECTION ENDS HERE -->
+
+        <!-- POOJA SECTION STARTS HERE -->
+        <section class="pooja">
+            <img src="dmart-images/pooja.png" alt="">
+        </section>
+        <!-- POOJA SECTION ENDS HERE -->
+
+        <!-- OFFER SECTION ENDS HERE -->
+        <section class="offer">
+
+            <div class="offer-parent">
+
+
+                <div class="left-offer">
+
+                    <div class="half-price">
+                        <img src="dmart-images/halfprice.jpg" alt="">
+                    </div>
+
+                    <div class="small-offer">
+
+                        <div class="small-card">
+                            <img src="dmart-images/clearnce.jpg" alt="">
+                        </div>
+
+                        <div class="small-card">
+                            <img src="dmart-images/ds.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="middle-offer">
+                    <img src="dmart-images/offersofdweek.jpg" alt="">
+                </div>
+
+
+                <div class="top-deal">
+                    <img src="dmart-images/topdeals.jpg" alt="">
+                </div>
+
+
+                <div class="bada-pack">
+                    <img src="dmart-images/badapack.jpg" alt="">
+                </div>
+
+            </div>
+
+        </section>
+        <!-- OFFER SECTION ENDS HERE -->
+
+        <!-- FRUIT SECTION STARTS HERE -->
+        <section class="fruit">
+
+            <h1>Fruits & Vegetables</h1>
+
+            <div class="fruit-parent">
+
+                <div class="fruit-box">
+                    <img src="dmart-images/f1.png" alt="">
+                </div>
+
+                <div class="fruit-box">
+                    <img src="dmart-images/f2.png" alt="">
+                </div>
+
+                <div class="fruit-box">
+                    <img src="dmart-images/f3.png" alt="">
+                </div>
+
+                <div class="fruit-box">
+                    <img src="dmart-images/f4.png" alt="">
+                </div>
+
+            </div>
+
+        </section>
+        <!-- FRUIT SECTION ENDS HERE -->
+
+
+        <!-- GIFT SECTION  START HERE -->
+        <section class="gift">
+            <img src="dmart-images/s5.jpg" alt="">
+        </section>
+        <!-- GIFT SECTION ENDS HERE  -->
+
+        <!-- EXCLUSIVE SECTION  START HERE -->
+        <section class="exclusive">
+            <img src="dmart-images/s7.jpg" alt="">
+        </section>
+        <!-- EXCLUSIVE SECTION ENDS HERE  -->
+
+        <!-- BASKET SECTION  START HERE -->
+        <section class="basket">
+            <img src="dmart-images/s8.jpg" alt="">
+        </section>
+        <!-- BASKET SECTION ENDS HERE  -->
+
+        <!-- SLIDER2 SECTION STARTS HERE -->
+        <div class="slider2">
+            <div class="slides2" id="slides2">
+                <div class="slide2">
+                    <img src="dmart-images/ss1.jpg" alt="">
+                </div>
+                <div class="slide2">
+                    <img src="dmart-images/ss2.jpg" alt="">
+                </div>
+                <div class="slide2">
+                    <img src="dmart-images/ss3.jpg" alt="">
+                </div>
+                <div class="slide2">
+                    <img src="dmart-images/ss4.jpg" alt="">
+                </div>
+                <div class="slide2">
+                    <img src="dmart-images/ss5.jpg" alt="">
+                </div>
+                <div class="slide6">
+                    <img src="dmart-images/ss5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- SLIDER2 SECTION ENDS HERE -->
+
+        <!-- POPCORN SECTION  START HERE -->
+        <section class="popcorn">
+            <img src="dmart-images/s12.jpg" alt="">
+        </section>
+        <!-- POPCORN SECTION ENDS HERE  -->
+
+        <!-- STAY SECTION  START HERE -->
+        <section class="stay">
+            <img src="dmart-images/s11.jpg" alt="">
+        </section>
+        <!-- STAY SECTION ENDS HERE  -->
+
+        <!-- JUICE SECTION  START HERE -->
+        <section class="juice">
+            <img src="dmart-images/s10.jpg" alt="">
+        </section>
+        <!-- JUICE SECTION ENDS HERE  -->
+
+        <!-- NOW SECTION  START HERE -->
+        <section class="now">
+            <img src="dmart-images/s9.jpg" alt="">
+        </section>
+        <!-- NOW SECTION ENDS HERE  -->
+
+        <!-- SLIDER 3 SECTION STARTS HERE -->
+        <div class="slider3">
+            <div class="slides3" id="slides3">
+                <div class="slide3">
+                    <img src="dmart-images/sss1.jpg" alt="">
+                </div>
+                <div class="slide3">
+                    <img src="dmart-images/sss2.jpg" alt="">
+                </div>
+                <div class="slide3">
+                    <img src="dmart-images/sss3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- SLIDER 3 SECTION ENDS HERE -->
+
+        <!-- STAY SECTION STARTS HERE -->
+        <section class="stay1">
+            <div class="stay1-parent">
+                <div class="stay1-box">
+                    <img src="dmart-images/stay1.png" alt="">
+                </div>
+                <div class="stay1-box">
+                    <img src="dmart-images/stay2.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- STAY SECTION ENDS HERE -->
+
+        <!-- CLEANING SECTION STARTS HERE -->
+        <section class="cleaning">
+            <div class="cleaning-parent">
+                <div class="cleaning-box">
+                    <img src="dmart-images/c1.jpg" alt="">
+                </div>
+                <div class="cleaning-box">
+                    <img src="dmart-images/c2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- CLEANING SECTION ENDS HERE -->
+
+        <!-- GROCERY SIDE PANEL -->
+        <section class="grocery-section" id="grocerySection">
+
+    <aside class="grocery-sidebar">
+
+        <div class="sidebar-title">Grocery</div>
+
+        <div class="sidebar-item">Cooking Oil (82)</div>
+        <div class="sidebar-item">Ghee & Vanaspati (25)</div>
+        <div class="sidebar-item">Rice (47)</div>
+        <div class="sidebar-item">Masala & Spices (249)</div>
+        <div class="sidebar-item">Flours & Grains (69)</div>
+        <div class="sidebar-item">Dals (43)</div>
+        <div class="sidebar-item">Dry Fruits (87)</div>
+        <div class="sidebar-item">Salt / Sugar / Jaggery (28)</div>
+        <div class="sidebar-item">Pulses (51)</div>
+        <div class="sidebar-item">Rice Products (22)</div>
+
+        <div class="sidebar-item active-sidebar">DMart Grocery (208)</div>
+
+        <div class="sidebar-subitem">Dals & Pulses</div>
+        <div class="sidebar-subitem">Dry Fruits</div>
+        <div class="sidebar-subitem">Salt / Sugar / Jaggery</div>
+        <div class="sidebar-subitem">Rice & Rice Products</div>
+
+    </aside>
+
+
+    <div class="grocery-content">
+
+        <div class="breadcrumb">
+            Home &nbsp; › &nbsp; Grocery &nbsp; › &nbsp; DMart Grocery
+        </div>
+
+        <div class="grocery-title">
+            <h1>DMart Grocery</h1>
+            <span id="productCount">208 products</span>
+        </div>
+
+
+        <div class="filter-row">
+
+            <button>Brand <i class="fa-solid fa-chevron-down"></i></button>
+
+            <button>Category <i class="fa-solid fa-chevron-down"></i></button>
+
+            <button>Type <i class="fa-solid fa-chevron-down"></i></button>
+
+            <button>Flavours <i class="fa-solid fa-chevron-down"></i></button>
+
+            <button>Properties <i class="fa-solid fa-chevron-down"></i></button>
+
+            <button>Packaging <i class="fa-solid fa-chevron-down"></i></button>
+
+            <button>Quantity <i class="fa-solid fa-chevron-down"></i></button>
+
+            <div class="sort-box">
+                <span>Sort by:</span>
+
+                <select>
+                    <option>Relevance</option>
+                    <option>Price Low to High</option>
+                    <option>Price High to Low</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        <div class="grocery-products" id="groceryProducts"></div>
+
+    </div>
+
+</section>
+    </main>
+    <!-- MAIN ENDS HERE -->
+
+    <!-- FOOTER SECTION STARTS HERE -->
+    <footer>
+        <!-- POPULAR SEARCHES -->
+        <div class="popular-search">
+
+            <h2>Popular Searches</h2>
+
+            <div class="search-row">
+                <p>Products</p>
+                <span>:</span>
+                <p id="fp">Milk|Cheese|Ketchup & Sauce|Pickles|Atta|Ready To Cook|Chips & Wafers|Oats|Green Tea|Cold
+                    Drinks|Skin
+                    Care|Body Lotions|Baby Powder|Bath Soaps|Hair Shampoos|Toothpaste|Diapers|Crockery Set|Tawas & Sauce
+                    Pans|Jar Container|Trolley bags|Bathroom Cleaners|Detergent Powder|Dishwash Liquids|Stationery Kits
+                </p>
+            </div>
+
+            <div class="search-row">
+                <p>Brands</p>
+                <span>:</span>
+                <p id="fp">Amul|Pampers|Tata|Cadbury Dairy
+                    Milk|Fortune|Gemini|MTR|Harpic|Vim|Haldiram|Patanjali|Borosil|Bata|D
+                    Homes|Britannia|Parle|Everest|DMart
+                    Premia|Maggi|Ching's|Society|Gowardhan|Saffola|Nescafe|Horlicks|Tide|Lizol|Kinder Joy|Ferrero
+                    Rocher|McCain|Johnson's|Himalaya|Mamy Poko|Nivea|Vaseline|Philips|Kellogg's|Wonderchef|Joyo
+                </p>
+            </div>
+
+            <div class="search-row">
+                <p>Categories</p>
+                <span>:</span>
+                <p id="fp">Grocery|Dairy & Beverages|Packaged Food|ruits & Vegetables|Home & Kitchen|Kitchen &
+                    Dining|Personal
+                    Care & Beauty|Sports & Fitness|Baby Care|Books|Stationery|Home Utility & Organisers|Electronics &
+                    Appliances|Footwear|Clothing & Accessories|Bags & More|Gifting|Seasonal & More
+                </p>
+            </div>
+        </div>
+
+        <!-- ALL CATEGORIES -->
+        <div class="all-categories">
+
+            <h2>All Categories</h2>
+
+
+            <div class="category-column">
+                <ul>
+                    <li><a href="">Grocery</a></li>
+                    <li><a href="">Dals</a></li>
+                    <li><a href="">Pulses</a></li>
+                    <li><a href="">Dry Fruits</a></li>
+                    <li><a href="">DMart Grocery</a></li>
+                    <li><a href="">Cooking Oil</a></li>
+                    <li><a href="">Ghee & Vanaspati</a></li>
+                    <li><a href="">Flours & Grains</a></li>
+                    <li><a href="">Rice & Rice Products</a></li>
+                    <li><a href="">Masala & Spices</a></li>
+                    <li><a href="">Salt / Sugar / Jaggery</a></li>
+                    <li><a href="">Dairy & Beverages</a></li>
+                    <li><a href="">Beverages</a></li>
+                    <li><a href="">Dairy</a></li>
+                    <li><a href="">Fruits & Vegetables</a></li>
+                    <li><a href="">Fresh Fruits</a></li>
+                    <li><a href="">Vegetables</a></li>
+                    <li><a href="">Home & Kitchen</a></li>
+                    <li><a href="">Detergent & Fabric Care</a></li>
+                    <li><a href="">Cleaners</a></li>
+                    <li><a href="">Utensil Cleaners</a></li>
+                    <li><a href="">Furniture & Decor</a></li>
+                    <li><a href="">Cookware</a></li>
+                    <li><a href="">Pooja Needs</a></li>
+                    <li><a href="">Kitchen & Dining</a></li>
+                    <li><a href="">Cookware Set</a></li>
+                    <li><a href="">Drinkware</a></li>
+                    <li><a href="">Shop By Room</a></li>
+                    <li><a href="">Packaged Food</a></li>
+                    <li><a href="">Biscuits & Cookies</a></li>
+                    <li><a href="">Snacks & Farsans</a></li>
+                    <li><a href="">Breakfast Cereals</a></li>
+                    <li><a href="">Chocolates & Candies</a></li>
+                    <li><a href="">Pasta & Noodles</a></li>
+                    <li><a href="">Ready to Cook</a></li>
+                    <li><a href="">Healthy Food</a></li>
+                    <li><a href="">Bakery</a></li>
+                    <li><a href="">Frozen Food</a></li>
+                    <li><a href="">Sweets</a></li>
+                    <li><a href="">Seasonal & More</a></li>
+                    <li><a href="">Gifting</a></li>
+                    <li><a href="">Festive Specials</a></li>
+                    <li><a href="">Bed & Bath</a></li>
+                    <li><a href="">Bedding</a></li>
+                    <li><a href="">Curtains</a></li>
+                    <li><a href="">Bedroom Storage</a></li>
+                    <li><a href="">Bath Accessories</a></li>
+                    <li><a href="">Electronics & Appliances</a></li>
+                    <li><a href="">Electronics & Accessories</a></li>
+                    <li><a href="">Home Appliances</a></li>
+                    <li><a href="">Kitchen Appliances</a></li>
+                    <li><a href="">Personal Care Appliances</a></li>
+                    <li><a href="">Clothing & Accessories</a></li>
+                    <li><a href="">Men Clothing</a></li>
+                    <li><a href="">Women Clothing</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Personal Care</a></li>
+                    <li><a href="">Sports & Fitness</a></li>
+                    <li><a href="">Books & Stationery</a></li>
+                    <li><a href="">Home Utility & Organisers</a></li>
+                    <li><a href="">Bags & More</a></li>
+                    <li><a href="">School Supplies</a></li>
+                    <li><a href="">Footwear</a></li>
+                    <li><a href="">Men's Footwear</a></li>
+                    <li><a href="">Women's Footwear</a></li>
+                    <li><a href="">Baby & Kids</a></li>
+                    <li><a href="">Diapering</a></li>
+                    <li><a href="">Baby Care</a></li>
+                    <li><a href="">Baby Food</a></li>
+                    <li><a href="">Baby Gear & Furniture</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+
+            <div class="app-section">
+
+                <p>Download DMart Ready Mobile App Now!!</p>
+
+                <div class="app-button">
+                    <a href="">
+                        <img src="image/google-play (1).svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="image/download-app-store (1).svg" alt="">
+                    </a>
+                </div>
+
+                <div class="payment-method">
+
+                    <img src="image/visa (1).svg" alt="">
+                    <img src="image/mastercard (1).svg" alt="">
+                    <img src="image/american (1).svg" alt="">
+                    <img src="image/rupay (1).svg" alt="">
+                    <img src="image/cash_outlined (1).svg" alt="">
+
+                </div>
+
+            </div>
+
+
+            <div class="information-links">
+                <ul>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Pricing, Delivery, Return and Refund Policy</a></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                    <li><a href="">Disclaimer</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Join Us</a></li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+        <div class="copyright">
+
+            <p>
+                Copyright &copy; 2026 Avenue E-Commerce Limited (AEL). All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+    <!-- FOOTER SECTION ENDS HERE -->
+
+    <!-- CART POP UP -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <div class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+
+            <button id="closeCart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2>My cart</h2>
+
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

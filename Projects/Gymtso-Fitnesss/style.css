@@ -1,0 +1,748 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER CSS STARTS HERE */
+.top-nav{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: black;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-ul{
+    display: none;
+}
+.top-nav h3{
+    color: white;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    font-size: 25px;
+}
+.top-bar{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.top-ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+}
+
+.top-ul li a:hover{
+    color: orangered;
+}
+
+.top-icon{
+    display: none;
+    gap: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.top-icon i:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(assets/hero-bg.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.top-parent {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.top-parent p {
+    color: rgb(197, 192, 192);
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 1%;
+    font-size: 23px;
+}
+
+.top-parent h1 {
+    text-transform: uppercase;
+    color: white;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 3%;
+    font-size: 40px;
+}
+
+.top-btn {
+    display: flex;
+    gap: 5px;
+}
+
+.top-btn a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    padding: 12px 20px;
+    font-family: "Nunito", sans-serif;
+}
+
+.top-btn a:hover {
+    border: 1px solid orangered;
+    color: orangered;
+
+}
+/* HEADER CSS ENDS HERE */
+
+/* INFO CSS STARTS HERE */
+.info{
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+}
+.info-parent{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin:  auto;
+}
+.info-box{
+    width: 100%;
+    padding-right: 30px;
+    margin-bottom: 6%
+}
+.info-box h3{
+    color: white;
+    padding-bottom: 3%;
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+}
+.info-box h5{
+    color: white;
+    padding-bottom: 3%;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+}
+.info-box p{
+    color: rgb(154, 154, 154);
+    padding-bottom: 3%;
+    font-family: "Nunito", sans-serif;
+}
+.info-box button{
+    width: 90%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 7px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.info-box button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    background-color: rgb(29, 86, 86);
+}
+.info-box1{
+    
+    border-left: 1px solid rgb(93, 93, 93);
+    padding-left: 3%;
+    
+}
+.info-box1 h3{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+}
+.info-box1 h6{
+    color: white;
+    font-family: "Inter", sans-serif;
+    padding-top: 5%;
+    font-size: 18px;
+}
+.info-box1 p{
+    color: rgb(132, 132, 132);
+    font-family: "Nunito", sans-serif;
+}
+/* INFO CSS ENDS HERE */
+
+/* HELLO CSS STARTS HERE */
+
+.hello {
+    width: 100%;
+    background-color: rgb(231, 228, 228);
+   
+}
+
+.hello-parent {
+    padding-top: 5%;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hello-info {
+    width: 100%;
+}
+
+.hello-info h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hello-info p {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: rgb(99, 98, 98);
+}
+
+.hello-box {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainer {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 250px;
+    background-color: white;
+}
+
+.trainer:hover{
+    cursor: pointer;
+    box-shadow: 0px 5px 20px rgb(42, 42, 42);
+    transform: scale(1.13);
+
+}
+.trainer img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.trainer-info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.hello-name h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+}
+
+.hello-name p {
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    color: rgb(91, 91, 91);
+    font-weight: 600;
+}
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.social-icons i {
+    font-size: 18px;
+    color: rgb(54, 54, 54);
+}
+/* HELLO CSS ENDS HERE */
+
+/* TRAIN CSS STARTS HERE */
+.train {
+    width: 100%;
+    background-color: white;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.train h3 {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(130, 130, 130);
+}
+
+.train h1 {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    padding-bottom: 35px;
+    font-size: 35px;
+    margin: 0;
+    font-size: 28px;
+}
+
+.train-parent {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.train-box {
+    width: 100%;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 8px 25px black;
+    border-radius: 7px;
+}
+
+.train-box img {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    display: block;
+}
+.train-info {
+    padding: 15px 20px 20px 20px;
+}
+
+.train-info h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+}
+
+.train-name {
+    display: flex;
+    gap: 4px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.train-name span:first-child {
+    color: rgb(91, 91, 91);
+    font-weight: 800;
+}
+
+.train-name span:last-child {
+    color: black;
+    font-weight: 600;
+}
+
+.train-info p {
+    font-family: "Nunito", sans-serif;
+    color: rgb(72, 72, 72);
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.price {
+    position: absolute;
+    top: 285px;
+    right: 20px;
+    width: 46px;
+    height: 43px;
+    font-weight: 600;
+    border-radius: 50%;
+    background-color: orangered;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+/* TRAIN CSS ENDS HERE */
+
+
+/* FORM CSS STARTS HERE */
+.form {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 6%;
+}
+
+.form-parent {
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 8%;
+}
+
+.form-info {
+    width: 90%;
+    margin: auto;
+}
+
+.form-info h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.form-info form {
+    width: 100%;
+}
+
+.form-info input {
+    width: 100%;
+    height: 45px;
+    padding-left: 1%;
+    margin-bottom: 15px;
+    border: 1px solid rgb(173, 171, 171);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+}
+
+.form-info input::placeholder {
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    position: relative;
+    top: -10px;
+}
+
+
+.form-info input[type="message"] {
+    height: 105px;
+    padding-top: 10px;
+}
+
+.form-info button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.form-info button:hover {
+    background-color: orangered;
+    cursor: pointer;
+    transform: scale(1.13);
+}
+
+.form-map {
+    padding-top: 2%;
+    width: 90%;
+    margin: auto;
+}
+
+.form-map h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.address {
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    padding-bottom: 2%;
+    font-weight: 600;
+    color: rgb(72, 72, 72);
+}
+
+.address i {
+    color: orangered;
+    margin-right: 8px;
+    font-size: 19px;
+}
+
+.form-map hr {
+    border: 2px solid rgb(201, 201, 201);
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+
+.map {
+    width: 100%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 195px;
+
+}
+/* FORM CSS ENDS HERE */
+
+
+/* TABLE CSS STARTS HERE */
+.table{
+    width: 100%;
+    background-color: black;
+     padding-top: 3%;
+    padding-bottom: 6%;
+}
+.table-title {
+    text-align: center;
+    padding-bottom: 4%;
+}
+.table-title h3{
+    color: rgb(175, 175, 175);
+    font-family: "Nunito", sans-serif;
+    font-weight: 450;
+    font-size: 23px;
+}
+.table-title h1{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+}
+.table-title h1:hover{
+    cursor: pointer;
+    transform: scale(1.14);
+    color: orangered;
+}
+.table-content{
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-family: "Nunito", sans-serif;
+    
+}
+.table-content th {
+    height: 45px;
+    background-color: orangered;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    border-right: 1px solid rgb(24, 24, 24);
+}
+.table-content th:first-child {
+    width: 80px;
+}
+
+.table-content td {
+    height: 60px;
+    text-align: center;
+    color: white;
+    border: 1px solid rgb(77, 76, 76);
+    font-size: 15px;
+}
+.table-content td:first-child {
+    background-color: orangered;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+.table-content td h4 {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.table-content td span {
+    display: block;
+    color: rgb(130, 130, 130);
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+}
+
+.table-content i {
+    font-size: 18px;
+}
+/* TABLE CSS ENDS HERE */
+
+/* FOOTER CSS STARTS HERE */
+.footer{
+    width: 100%;
+}
+.footer hr{
+    color: rgb(215, 215, 215);
+}
+
+.footer-parent{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    margin: auto;
+    width: 96%;
+    justify-content: space-between;
+
+}
+
+.footer-left p{
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: rgb(103, 103, 103);
+}
+
+.footer-right{
+    display: flex;
+    gap: 15px;
+}
+.footer-right i{
+    color: orangered;
+    font-size: 19px;
+    padding-right: 1%;
+}
+.footer-right p{
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: rgb(103, 103, 103);
+}
+/* FOOTER CSS ENDS HERE  */
+
+/* TABLET VIEW */
+@media(min-width:768px){
+.top-parent{
+    padding-top: 120px;
+}
+.info-parent{
+    flex-direction: row;
+}
+.hello-box{
+    flex-direction: row;
+    justify-content: center;
+}
+ .train-parent {
+        width: 85%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 22px;
+    }
+
+    .train-box {
+        width: 48%;
+    }
+     .form-parent {
+        width: 85%;
+        flex-direction: row;
+        gap: 5%;
+    }
+
+    .form-info {
+        width: 48%;
+        margin: 0;
+    }
+
+    .form-map {
+        width: 48%;
+        margin: 0;
+    }
+    .footer-parent{
+        width: 85%;
+    }
+    .table-content {
+        width: 90%;
+    }
+}
+
+
+/* LAPTOP VIEW */
+@media(min-width:1024px){
+    .top-parent{
+        width: 40%;
+        font-size: 50px;
+    }
+    .top-bar{
+        display: none;
+    }
+    .top-nav{
+        width: 90%;
+    }
+    .top-ul{
+        display: flex;
+        gap: 35px;
+        list-style: none;
+        margin-right: -9%;
+    }
+    .top-icon{
+        display: flex;
+    }
+    .info-box{
+        width: 60%;
+    }
+    .info-box1{
+        width: 30%;
+        height: 50%;
+    }
+    .hello-info{
+        width: 55%;
+    }
+    .hello-parent{
+        flex-direction: row;
+        width: 85%;
+        margin: auto;
+    }
+    .hello-box{
+        margin-top: -5%;
+        gap: 4%;
+    }
+    .train-box{
+        width: 31%;
+    }
+     .form-parent {
+        width: 85%;
+        flex-direction: row;
+        gap: 5%;
+    }
+    .form-info h1{
+        text-align: start;
+
+    }
+
+    .form-info {
+        width: 48%;
+        margin: 0;
+    }
+    .form-map h1{
+        text-align: start;
+    }
+
+    .form-map {
+        position: relative;
+        top: -25px;
+        width: 48%;
+        margin: 0;
+    }
+    .footer-parent{
+        width: 85%;
+    }
+     .table-content {
+        width: 85%;
+    }
+}

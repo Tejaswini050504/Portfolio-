@@ -1,0 +1,1743 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+main {
+    background-color: rgb(240, 242, 246);
+}
+
+html {
+    scrollbar-color: rgb(37, 165, 65) white;
+}
+
+/* HEADER CSS STARTS HERE */
+.top {
+    width: 100%;
+    display: flex;
+    height: 70px;
+}
+
+.top-image {
+    padding-top: 1%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-image img {
+    width: 130px;
+}
+
+.top-loc {
+    padding-top: 1%;
+    width: 155px;
+    padding-left: 2px;
+    position: relative;
+    background-color: rgb(224, 238, 243);
+    border-bottom-right-radius: 17px;
+    border-top-left-radius: 17px;
+}
+
+.top-loc .fa-location-dot {
+    color: rgb(37, 165, 65);
+    font-size: 16px;
+}
+
+.top-loc span {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(94, 94, 94);
+}
+
+.top-loc i {
+    margin-left: 4px;
+    font-size: 14px;
+    color: black;
+}
+
+.top-loc marquee {
+    font-weight: 550;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 28px;
+    color: rgb(94, 94, 94);
+}
+
+.top-home {
+    width: 250px;
+    padding-top: 1%;
+    padding-left: 5px;
+}
+
+.top-home p:first-child {
+    color: rgb(94, 94, 94);
+    font-size: 15px;
+}
+
+.top-home strong {
+    color: rgb(37, 165, 65);
+}
+
+.top-home p:last-child {
+    margin-top: 6px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.top-home i {
+    color: rgb(243, 155, 39);
+    margin-right: 6px;
+}
+
+.top-search {
+    padding-top: 1%;
+    flex: 1;
+    display: flex;
+    height: 54px;
+    margin-right: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-search input {
+    width: 460px;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 0 17px;
+    font-size: 17px;
+    outline: none;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    box-sizing: border-box;
+    background: transparent;
+    position: relative;
+    z-index: 3;
+}
+
+#placeholderText {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: grey;
+    font-size: 16px;
+    transition: transform 1s ease, opacity 0.5s ease;
+    z-index: 2;
+}
+
+#placeholderText.move-up {
+    transform: translateY(-50%);
+    opacity: 0;
+    padding-left: 75px;
+}
+
+.top-search button {
+    width: 105px;
+    border: none;
+    background-color: rgb(37, 165, 65);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.top-search button:hover {
+    cursor: pointer;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.top-sign {
+    padding-top: 1%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-right: 40px;
+    white-space: nowrap;
+}
+
+.top-sign i {
+    color: rgb(37, 165, 65);
+    font-size: 23px;
+}
+
+.top-sign span {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+
+.top-sign span:hover {
+    cursor: pointer;
+    text-decoration: solid underline rgb(51, 51, 51);
+}
+
+.top-bell {
+    padding-top: 2%;
+    margin-right: 45px;
+}
+
+.top-bell i {
+    color: rgb(37, 165, 65);
+    font-size: 28px;
+}
+
+
+/* **************** TOP CART **************** */
+
+.top-cart {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon i {
+    font-size: 25px;
+    color: rgb(37, 165, 65);
+}
+
+#cartCount {
+    position: absolute;
+    top: -13px;
+    right: -12px;
+    min-width: 20px;
+    height: 20px;
+    padding: 1px 5px;
+    border-radius: 50%;
+    background-color: rgb(255, 213, 79);
+    color: rgb(50, 50, 50);
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#cartAmount {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(40, 40, 40);
+}
+
+
+/* **************** CART OVERLAY **************** */
+
+.cart-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 9998;
+}
+
+
+/* **************** CART PANEL **************** */
+
+.cart-panel {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 590px;
+    height: 100vh;
+    background-color: white;
+    z-index: 9999;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+}
+
+
+/* **************** CART HEADER **************** */
+
+.cart-header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    box-sizing: border-box;
+}
+
+#closeCart {
+    width: 55px;
+    height: 55px;
+    border: none;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-header h2 {
+    margin-left: 20px;
+    font-size: 25px;
+    color: rgb(30, 30, 30);
+    font-weight: 500;
+}
+
+
+/* **************** CART ITEMS **************** */
+
+.cart-items {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* **************** SINGLE CART ITEM **************** */
+
+.cart-item {
+    width: 100%;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+
+/* **************** ITEM TOP **************** */
+
+.cart-item-top {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* **************** PRODUCT IMAGE **************** */
+
+.cart-item-image {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.cart-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* **************** PRODUCT DETAILS **************** */
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-name {
+    font-size: 17px;
+    color: rgb(35, 35, 35);
+    margin-top: 5px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+
+/* **************** PRICE **************** */
+
+.cart-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-price {
+    font-size: 16px;
+    color: rgb(50, 50, 50);
+}
+
+.cart-price strong {
+    font-size: 18px;
+}
+
+
+/* **************** SAVING **************** */
+
+.cart-save {
+    background-color: rgb(233, 247, 236);
+    color: rgb(37, 165, 65);
+    padding: 9px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+/* **************** ITEM BOTTOM **************** */
+
+.cart-item-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* **************** QUANTITY **************** */
+
+.cart-quantity {
+    display: flex;
+    height: 43px;
+}
+
+.cart-quantity button {
+    width: 55px;
+    height: 43px;
+    border: none;
+    background-color: rgb(37, 165, 65);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.cart-quantity span {
+    width: 55px;
+    height: 43px;
+    border-top: 1px solid rgb(220, 220, 220);
+    border-bottom: 1px solid rgb(220, 220, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(50, 50, 50);
+    box-sizing: border-box;
+}
+
+
+/* **************** DELETE **************** */
+
+.cart-delete {
+    width: 55px;
+    height: 43px;
+    margin-left: 10px;
+    border: 1px solid rgb(210, 210, 210);
+    background-color: white;
+    color: rgb(140, 140, 140);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart-delete:hover {
+    color: rgb(220, 50, 50);
+}
+
+
+nav {
+    display: flex;
+    border-top: 1px solid gray;
+    height: 40px;
+    border-bottom: 1px solid gray;
+}
+
+.nav-cate {
+    padding-top: 10px;
+    width: 230px;
+    gap: 10px;
+    display: flex;
+    margin-right: 3%;
+    padding-left: 10px;
+    border-right: 1px solid gray;
+}
+
+.nav-list {
+    padding-top: 10px;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+}
+
+.nav-list a:hover {
+    cursor: pointer;
+    text-decoration: solid underline rgb(51, 51, 51);
+}
+/* **************** GROCERY PAGE **************** */
+
+.grocery-section {
+    display: none;
+    width: 100%;
+    background: rgb(255,255,255);
+    min-height: 700px;
+}
+
+.grocery-sidebar {
+    width: 220px;
+    min-width: 220px;
+    border-right: 1px solid rgb(220,220,220);
+    background: rgb(255,255,255);
+}
+
+.sidebar-title {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 18px 24px;
+    border-bottom: 1px solid rgb(220,220,220);
+}
+
+.sidebar-item {
+    padding: 13px 24px;
+    font-size: 14px;
+    color: rgb(120,120,120);
+    border-bottom: 1px solid rgb(225,225,225);
+    cursor: pointer;
+}
+
+.sidebar-item:hover {
+    color: rgb(30,160,70);
+}
+
+.active-sidebar {
+    color: rgb(20,160,65);
+    font-weight: bold;
+    background: rgb(248,250,248);
+}
+
+.sidebar-subitem {
+    padding: 11px 32px;
+    font-size: 14px;
+    color: rgb(90,90,90);
+    background: rgb(248,248,248);
+}
+
+.grocery-content {
+    flex: 1;
+    padding: 22px 16px 40px 16px;
+    overflow: hidden;
+}
+
+.breadcrumb {
+    font-size: 13px;
+    color: rgb(140,140,140);
+    margin-bottom: 24px;
+}
+
+.grocery-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.grocery-title h1 {
+    margin: 0;
+    font-size: 26px;
+    color: rgb(55,55,55);
+}
+
+.grocery-title span {
+    font-size: 16px;
+    color: rgb(150,150,150);
+}
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.filter-row button {
+    height: 34px;
+    padding: 0 17px;
+    background: rgb(255,255,255);
+    border: 1px solid rgb(30,170,70);
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(65,65,65);
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.filter-row button i {
+    margin-left: 7px;
+    font-size: 11px;
+}
+
+.sort-box {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.sort-box span {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(65,65,65);
+}
+
+.sort-box select {
+    width: 120px;
+    height: 36px;
+    border: 1px solid rgb(225,225,225);
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 14px;
+    background: rgb(255,255,255);
+}
+
+.grocery-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px;
+}
+
+.grocery-product {
+    min-width: 0;
+    border: 1px solid rgb(220,220,220);
+    border-radius: 5px;
+    background: rgb(255,255,255);
+    padding: 12px;
+    position: relative;
+}
+
+.product-image {
+    width: 100%;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.product-image img {
+    max-width: 85%;
+    max-height: 155px;
+    object-fit: contain;
+}
+
+.product-name {
+    min-height: 42px;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgb(75,75,75);
+    margin-bottom: 10px;
+}
+
+.product-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-price {
+    font-size: 13px;
+    color: rgb(110,110,110);
+}
+
+.product-price strong {
+    font-size: 15px;
+    color: rgb(60,60,60);
+}
+
+.product-price del {
+    margin-left: 5px;
+    color: rgb(150,150,150);
+}
+
+.product-save {
+    background: rgb(233,247,237);
+    color: rgb(20,160,65);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 7px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.product-tax {
+    font-size: 12px;
+    color: rgb(145,145,145);
+    font-style: italic;
+    margin: 4px 0 10px 0;
+}
+
+.add-cart-btn {
+    width: 100%;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    background: rgb(31,165,67);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-cart-btn:hover {
+    background: rgb(25,145,58);
+}
+
+.grocery-quantity {
+    display: flex;
+    width: 100%;
+    height: 38px;
+    margin-top: 10px;
+}
+
+.grocery-quantity button {
+    width: 38px;
+    border: none;
+    background: rgb(31,165,67);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.grocery-quantity span {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(31,165,67);
+    border-bottom: 1px solid rgb(31,165,67);
+    font-size: 14px;
+}
+
+
+
+/* SHOP CSS STARTS HERE */
+.shop {
+    width: 96%;
+    border: 1px solid rgb(187, 184, 184);
+    padding: 2%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+.shop :hover {
+    cursor: pointer;
+}
+
+.shop img {
+    width: 100%;
+}
+
+/* SHOP CSS ENDS HERE */
+
+/* GIFT CSS STARTS HERE */
+.gift {
+    width: 96%;
+    border: 1px solid rgb(187, 184, 184);
+    padding: 2%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.gift :hover {
+    cursor: pointer;
+}
+
+.gift img {
+    width: 100%;
+}
+
+/* GIFT CSS ENDS HERE */
+
+/* POOJA CSS STARTS HERE */
+.pooja {
+    width: 96%;
+    border: 1px solid rgb(187, 184, 184);
+    padding: 2%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+.pooja :hover {
+    cursor: pointer;
+}
+
+.pooja img {
+    width: 100%;
+}
+
+/* POOJA CSS ENDS HERE */
+
+/* EXCLUSIVE CSS STARTS HERE */
+.exclusive {
+    width: 96%;
+    border: 1px solid rgb(187, 184, 184);
+    padding: 2%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+.exclusive :hover {
+    cursor: pointer;
+}
+
+.exclusive img {
+    width: 100%;
+}
+
+/* EXCLUSIVE CSS ENDS HERE */
+
+/* BASKET CSS STARTS HERE */
+.basket {
+    width: 96%;
+    border: 1px solid rgb(187, 184, 184);
+    padding: 2%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+.basket :hover {
+    cursor: pointer;
+}
+
+.basket img {
+    width: 100%;
+}
+
+/* BASKET CSS ENDS HERE */
+
+/* POPCORN CSS STARTS HERE */
+.popcorn {
+    width: 96%;
+    border: 1px solid rgb(187, 184, 184);
+    padding: 2%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+.popcorn :hover {
+    cursor: pointer;
+}
+
+.popcorn img {
+    width: 100%;
+}
+
+/* POPCORN CSS ENDS HERE */
+
+/* STAY CSS STARTS HERE */
+.stay {
+    width: 96%;
+    border: 1px solid rgb(187, 184, 184);
+    padding: 2%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+.stay :hover {
+    cursor: pointer;
+}
+
+.stay img {
+    width: 100%;
+}
+
+/* STAY CSS ENDS HERE */
+
+/* JUICE CSS STARTS HERE */
+.juice {
+    width: 96%;
+    border: 1px solid rgb(187, 184, 184);
+    padding: 2%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+.juice :hover {
+    cursor: pointer;
+}
+
+.juice img {
+    width: 100%;
+}
+
+/* JUICE CSS ENDS HERE */
+
+/* NOW CSS STARTS HERE */
+.now {
+    width: 96%;
+    border: 1px solid rgb(187, 184, 184);
+    padding: 2%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+.now :hover {
+    cursor: pointer;
+}
+
+.now img {
+    width: 100%;
+}
+
+/* NOW CSS ENDS HERE */
+
+/* CATEGORY SECTION STARTS HERE */
+.category {
+    width: 96%;
+    margin: auto;
+    border: 1px solid rgb(187, 184, 184);
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.category h3 {
+    padding-bottom: 1%;
+}
+
+.category-parent {
+    width: 100%;
+    position: relative;
+}
+
+.category-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.category-track {
+    width: max-content;
+    display: flex;
+    gap: 32.3px;
+    justify-content: flex-start;
+    transition: transform 0.5s ease;
+}
+
+.category-parent img {
+    border-radius: 10px;
+    width: 110px;
+    border: 2px solid rgba(104, 104, 104, 0.622);
+}
+
+.category-box {
+    min-width: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.category h3 {
+    padding-bottom: 1%;
+}
+
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: 21px;
+    width: 40px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 221, 221);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+    cursor: pointer;
+
+}
+
+.left-arrow {
+    left: 0;
+    display: none;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.left-arrow i,
+.right-arrow i {
+    font-size: 25px;
+    color: rgb(37, 165, 65);
+}
+
+/* CATEGORY SECTION ENDS HERE */
+
+/* MONSOON CSS STARTS HERE */
+.monsoon {
+    width: 96%;
+    margin: auto;
+    border: 1px solid rgb(187, 184, 184);
+    border-radius: 4px;
+    background-color: rgb(1, 134, 167);
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.monsoon h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.monsoon-parent {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    align-items: stretch;
+}
+
+.monsoon-left {
+    width: 33.33%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.monsoon-left div img {
+    width: 100%;
+}
+
+.monsoon-left,
+.middle-box,
+.monsoon-right {
+    overflow: hidden;
+}
+
+.monsoon-left img,
+.middle-box img,
+.monsoon-right img {
+    transition: transform 0.1s ease;
+}
+
+.monsoon-left img:hover,
+.middle-box img:hover,
+.monsoon-right img:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.monsoon-left img {
+    border-radius: 15px;
+}
+
+.monsoon-middle {
+    width: 33.33%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.middle-box {
+    width: 210px;
+    height: 240px;
+    border-radius: 22px;
+}
+
+.middle-box div img:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.middle-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.monsoon-right {
+    width: 33.33%;
+}
+
+.monsoon-right img {
+    border-radius: 20px;
+}
+
+/* MONSOON CSS ENDS HERE */
+
+/* OFFER CSS STARTS HERE */
+.offer {
+    width: 96%;
+    margin: auto;
+    border: 1px solid rgb(187, 184, 184);
+    border-radius: 4px;
+    background-color: white;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.offer-parent {
+    display: flex;
+    gap: 5px;
+}
+
+.small-offer {
+    display: flex;
+}
+
+.small-card img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.half-price img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.middle-offer img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.top-deal img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.bada-pack img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.small-card img,
+.half-price img,
+.middle-offer img,
+.top-deal img,
+.bada-pack img {
+    transition: transform 0.1s ease;
+}
+
+/* OFFER CSS ENDS HERE */
+
+/* FRUIT CSS STARTS HERE */
+.fruit {
+    background-color: rgb(252, 233, 191);
+    width: 96%;
+    margin: auto;
+    border: 1px solid rgb(187, 184, 184);
+    border-radius: 4px;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.fruit h1 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 2%;
+}
+
+.fruit-parent {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.fruit-box {
+    width: 48%;
+}
+
+.fruit-box img {
+    border-radius: 29px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid green;
+    transition: transform 0.1s ease;
+}
+
+.fruit-box img:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+/* FRUIT CSS ENDS HERE */
+
+
+/* LOCATION POP UP STARTS HERE */
+
+.top-loc-1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 9999;
+}
+
+.top-loc-box {
+    width: 750px;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    overflow: visible;
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    z-index: 10000;
+}
+
+.close i {
+    font-size: 20px;
+}
+
+.close i:hover {
+    cursor: pointer;
+}
+
+.loc-box-top {
+    height: 160px;
+    background: rgb(241, 241, 241);
+    padding-top: 20px;
+}
+
+.loc-box-top h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.search-box {
+    width: 688px;
+    height: 55px;
+    margin: 23px auto 0;
+    position: relative;
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 55px;
+    padding-right: 20px;
+    border: 1px solid rgb(37, 165, 65);
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    background: rgb(255, 255, 255);
+    color: rgb(68, 68, 68);
+}
+
+.search-box i {
+    position: absolute;
+    left: 20px;
+    top: 17px;
+    color: rgb(139, 152, 165);
+    font-size: 21px;
+}
+
+.loc-box-down {
+    padding: 26px 31px;
+    background: rgb(255, 255, 255);
+}
+
+.loc-box-down h4 {
+    margin: 0 0 18px;
+    font-size: 14px;
+    color: rgb(136, 136, 136);
+    text-transform: uppercase;
+}
+
+.loc-search {
+    display: flex;
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+
+.loc-search i {
+    width: 34px;
+    color: rgb(211, 211, 211);
+    font-size: 22px;
+}
+
+.loc-search span h4 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    color: rgb(67, 67, 67);
+}
+
+.loc-search span p {
+    margin: 0;
+    font-size: 15px;
+    color: rgb(136, 136, 136);
+}
+
+/* LOCATION POP ENDS HERE */
+
+/* SIGN-IN POPUP STARTS HERE*/
+.top-sign-1 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.45);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.sign-in-box {
+    width: 700px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+}
+
+.close1 {
+    position: absolute;
+    right: -50px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+.close1:hover {
+    cursor: pointer;
+}
+
+.Sign-img {
+    width: 43%;
+    height: 100%;
+}
+
+.Sign-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sign-head {
+    width: 57%;
+    height: 50px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+.sign-head h2 {
+    margin-top: 3%;
+    font-size: 21px;
+    color: rgb(48, 48, 48);
+    font-weight: 700;
+}
+
+.sign-down {
+    width: 47%;
+    position: absolute;
+    top: 85px;
+    right: 7%;
+}
+
+.sign-down h4 {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(72, 72, 72);
+    margin-bottom: 10px;
+}
+
+.sign-down input {
+    width: 100%;
+    height: 42px;
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 7px;
+    padding-left: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.sign-down p {
+    font-size: 17px;
+    color: rgb(119, 119, 119);
+    margin-top: 25px;
+}
+
+.sign-down span {
+    color: rgb(40, 115, 63);
+}
+
+.sign-down button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+    background-color: rgb(220, 220, 220);
+}
+
+.sign-down button:hover {
+    cursor: pointer;
+}
+
+/* SIGN-IN POPUP ENDS HERE */
+
+
+/* CLEANING CSS STARTS HERE */
+.cleaning {
+    width: 96%;
+    margin: auto;
+    border: 1px solid rgb(187, 184, 184);
+    border-radius: 4px;
+    background-color: white;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.cleaning-parent {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.cleaning-box img {
+    transition: transform 0.1s ease;
+}
+
+.cleaning-box img:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+/* CLEANING CSS ENDS HERE */
+
+/* STAY CSS STARTS HERE */
+.stay1 {
+    width: 96%;
+    margin: auto;
+    border: 1px solid rgb(187, 184, 184);
+    border-radius: 4px;
+    background-color: white;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.stay1-parent {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.stay1-box img {
+    width: 580px;
+}
+
+.stay1-box:hover {
+    cursor: pointer;
+}
+
+/* STAY CSS ENDS HERE */
+
+/* FOOTER CSS STARTS HERE */
+footer {
+    width: 100%;
+}
+
+.popular-search {
+    width: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.popular-search h2 {
+    font-size: 18px;
+    margin: 0 0 30px 0;
+}
+
+.search-row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-row p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.search-row p:first-child {
+    width: 75px;
+}
+
+.search-row span {
+    margin-right: 10px;
+    margin-left: 2%;
+}
+
+.search-row #fp {
+    flex: 1;
+    font-size: 12px;
+    margin: 0;
+}
+
+.all-categories {
+    width: 100%;
+    padding: 25px 40px 40px 40px;
+    box-sizing: border-box;
+}
+
+.category-column {
+    width: 100%;
+}
+
+.all-categories h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.category-column ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-column li {
+    width: 16.66%;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+}
+
+.category-column li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.information-links {
+    width: 50%;
+}
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.app-section {
+    width: 50%;
+}
+
+.app-section p {
+    margin: 0 0 25px 0;
+    color: #444;
+}
+
+.app-button {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.app-button a {
+    display: block;
+}
+
+.app-button img {
+    width: 125px;
+    height: auto;
+    display: block;
+}
+
+.payment-method {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.payment-method img {
+    width: 32px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.information-links ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.information-links li {
+    width: 50%;
+    margin-bottom: 18px;
+}
+
+.information-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.information-links li a:hover {
+    text-decoration: solid underline rgb(51, 51, 51);
+}
+
+.copyright {
+    margin: 0 40px;
+    border-top: 1px solid rgb(221, 221, 221);
+    padding: 18px 0;
+    text-align: center;
+}
+
+.copyright p {
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+}
+
+/* FOOTER CSS ENDS HERE */
+
+/* SLIDER 1 CSS STARTS HERE */
+.slider1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    transition: transform 0.8s ease-in-out;
+    margin-bottom: 2%;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* SLIDER 1 CSS ENDS HERE */
+
+/* SLIDER 2 CSS STARTS HERE */
+.slider2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides2 {
+    display: flex;
+    width: 100%;
+    transition: transform 0.8s ease-in-out;
+    margin-bottom: 2%;
+}
+
+.slide2 {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide2 img {
+    width: 100%;
+    display: block;
+}
+
+/* SLIDER 2 CSS ENDS HERE */
+
+/* SLIDER 3 CSS STARTS HERE */
+.slider3 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides3 {
+    display: flex;
+    width: 100%;
+    transition: transform 0.8s ease-in-out;
+    margin-bottom: 2%;
+}
+
+.slide3 {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide3 img {
+    width: 100%;
+    display: block;
+}
+
+/* SLIDER 3 CSS ENDS HERE */
